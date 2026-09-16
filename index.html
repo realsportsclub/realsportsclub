@@ -1,91 +1,1689 @@
-<!doctype html>
-<html lang="fr">
+
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="DBL Habitat - Peinture, plâtrerie, placoplâtre et rénovation.">
-<title>DBL Habitat | Peinture • Plâtrerie • Rénovation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Real Sports Club | Sports Academy</title>
+
+<meta name="description"
+content="Real Sports Club - Sports Academy. Deporte, formación, competición y comunidad.">
+
 <style>
-:root{--b:#06265f;--o:#ff7800;--bg:#f5f8fc;--txt:#10213d;--mut:#60708b}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:var(--txt);line-height:1.55}
-.container{width:min(1180px,92%);margin:auto}.top{background:var(--b);color:white;padding:9px 0;font-size:14px}.top .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-header{position:sticky;top:0;z-index:10;background:#fffffff5;box-shadow:0 3px 18px #0001}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--b);font-size:22px}.logo img{width:62px;height:52px;object-fit:contain}.logo small{display:block;color:var(--o);font-size:10px;letter-spacing:1px}
-nav{display:flex;align-items:center;gap:22px;font-weight:bold;font-size:14px}nav a{text-decoration:none;color:inherit}nav a:hover{color:var(--o)}.menu{display:none;background:none;border:0;font-size:28px;color:var(--b)}
-.btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:800;text-decoration:none;border:2px solid var(--b);cursor:pointer}.primary{background:var(--o);border-color:var(--o);color:#fff}.outline{color:var(--b)}
-.hero{background:linear-gradient(135deg,#f8fbff,#eaf1fb);padding:65px 0}.heroGrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.badge{display:inline-block;background:#e6efff;color:var(--b);padding:8px 14px;border-radius:99px;font-weight:bold;font-size:13px}
-h1{font-size:clamp(42px,6vw,70px);line-height:1;margin:18px 0;color:var(--b)}h1 span{color:var(--o)}.hero p{font-size:19px;color:var(--mut);max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.hero img{width:100%;max-height:570px;object-fit:contain}
-.trust{background:var(--b);color:#fff;padding:18px 0}.trustGrid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:12px}.trust strong{display:block;font-size:18px}.trust small{opacity:.75}
-section{padding:75px 0}.head{text-align:center;max-width:760px;margin:0 auto 40px}.kicker{color:var(--o);font-size:13px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}h2{font-size:clamp(30px,4vw,45px);line-height:1.1;color:var(--b);margin:8px 0 12px}.head p{color:var(--mut)}
-.services{background:var(--bg)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;padding:27px;border-radius:18px;box-shadow:0 12px 35px #06265f18;border:1px solid #e5ebf4}.icon{width:54px;height:54px;border-radius:14px;background:#fff0e5;color:var(--o);display:grid;place-items:center;font-size:25px}.card h3{color:var(--b);margin:15px 0 7px}.card p{color:var(--mut);font-size:15px}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.aboutImg{border-radius:20px;overflow:hidden;box-shadow:0 15px 40px #06265f20}.aboutImg img{width:100%;display:block}.checks{display:grid;gap:11px;margin:20px 0}.check b{color:var(--o);margin-right:9px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:var(--bg);border-radius:12px;padding:16px;text-align:center}.stat strong{display:block;color:var(--b);font-size:25px}
-.gallery{background:var(--bg)}.galleryGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.galleryGrid img{width:100%;height:290px;object-fit:cover;border-radius:15px;box-shadow:0 12px 30px #0002}
-.cta{background:linear-gradient(120deg,var(--b),#0b55ae);color:#fff}.ctaGrid{display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{color:#fff}.cta p{max-width:650px;opacity:.88}
-.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px}.contactBox{background:var(--b);color:#fff;border-radius:20px;padding:30px}.contactBox h3{font-size:27px}.item{padding:13px 0;border-bottom:1px solid #ffffff22}.item small{display:block;opacity:.65;text-transform:uppercase;font-size:10px}.item a{color:#fff}.form{padding:30px;border-radius:20px;box-shadow:0 12px 35px #06265f18;border:1px solid #e2e8f1}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.full{grid-column:1/-1}label{font-weight:bold;color:var(--b);font-size:13px}input,select,textarea{padding:13px;border:1px solid #d3ddea;border-radius:9px;font:inherit}textarea{min-height:130px;resize:vertical}
-footer{background:#071a3d;color:#d9e4f6;padding:40px 0 18px}.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.foot h3{color:#fff}.foot a{color:#d9e4f6}.copy{border-top:1px solid #ffffff20;margin-top:25px;padding-top:15px;font-size:12px;display:flex;justify-content:space-between}
-.float{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:9px;z-index:20}.float a{width:52px;height:52px;border-radius:50%;background:var(--o);color:#fff;display:grid;place-items:center;font-size:21px;text-decoration:none;box-shadow:0 8px 20px #0003}
-@media(max-width:850px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px;flex-direction:column}nav.open{display:flex}.menu{display:block}.heroGrid,.about,.contact{grid-template-columns:1fr}.cards,.galleryGrid{grid-template-columns:1fr 1fr}.trustGrid{grid-template-columns:1fr 1fr}.ctaGrid{flex-direction:column;align-items:flex-start}.foot{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.cards,.galleryGrid,.grid,.stats,.foot{grid-template-columns:1fr}.copy{flex-direction:column}.top .container{justify-content:center;text-align:center}}
+
+/* =========================================================
+SPORTS CLUB
+DISEÑO PRINCIPAL
+========================================================= */
+
+:root{
+--black:#050505;
+--black2:#0b0b0d;
+--black3:#111116;
+
+--gold:#f5bd28;
+--gold2:#ffd966;
+--gold-dark:#8d6410;
+
+--red:#d71920;
+--red2:#ff3038;
+
+--purple:#8d168d;
+--purple2:#e52bc4;
+
+--white:#ffffff;
+--gray:#a9a9af;
+--gray2:#6e6e75;
+
+--border:rgba(255,255,255,.10);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--black);
+color:#fff;
+font-family:
+Inter,
+Arial,
+Helvetica,
+sans-serif;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+button{
+font-family:inherit;
+}
+
+
+/* =========================================================
+SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-track{
+background:#050505;
+}
+
+::-webkit-scrollbar-thumb{
+background:linear-gradient(
+var(--red),
+var(--gold)
+);
+border-radius:20px;
+}
+
+
+/* =========================================================
+HEADER
+========================================================= */
+
+.header{
+position:fixed;
+z-index:9999;
+top:0;
+left:0;
+width:100%;
+height:82px;
+
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,.96),
+rgba(5,5,5,.82)
+);
+
+backdrop-filter:blur(15px);
+
+border-bottom:
+1px solid rgba(245,189,40,.18);
+}
+
+.nav{
+width:min(1250px,92%);
+height:100%;
+margin:auto;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.brand-logo{
+width:47px;
+height:57px;
+
+object-fit:contain;
+
+filter:
+drop-shadow(0 0 10px rgba(245,189,40,.25));
+}
+
+.brand-text{
+font-size:20px;
+font-weight:1000;
+letter-spacing:1px;
+text-transform:uppercase;
+}
+
+.brand-text span{
+color:var(--gold);
+}
+
+.menu{
+display:flex;
+align-items:center;
+gap:27px;
+list-style:none;
+}
+
+.menu a{
+color:#d6d6d6;
+font-size:12px;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:.8px;
+transition:.25s;
+}
+
+.menu a:hover{
+color:var(--gold);
+}
+
+.menu-button{
+display:none;
+
+background:none;
+border:0;
+
+color:#fff;
+font-size:28px;
+cursor:pointer;
+}
+
+
+/* =========================================================
+HERO
+========================================================= */
+
+.hero{
+min-height:100vh;
+position:relative;
+
+display:flex;
+align-items:center;
+
+overflow:hidden;
+
+background:
+radial-gradient(
+circle at 82% 48%,
+rgba(142,22,141,.28),
+transparent 28%
+),
+
+radial-gradient(
+circle at 78% 65%,
+rgba(215,25,32,.16),
+transparent 32%
+),
+
+#030303;
+}
+
+.hero::before{
+content:"";
+
+position:absolute;
+inset:0;
+
+background:
+linear-gradient(
+90deg,
+#030303 0%,
+rgba(3,3,3,.96) 28%,
+rgba(3,3,3,.62) 55%,
+rgba(3,3,3,.18) 100%
+);
+
+z-index:1;
+}
+
+.hero::after{
+content:"";
+
+position:absolute;
+
+width:650px;
+height:650px;
+
+right:-220px;
+top:100px;
+
+border-radius:50%;
+
+border:
+1px solid rgba(245,189,40,.12);
+
+box-shadow:
+0 0 80px rgba(245,189,40,.06);
+
+z-index:1;
+}
+
+.hero-main{
+position:absolute;
+
+width:min(580px,52vw);
+
+right:6%;
+top:50%;
+
+transform:
+translateY(-50%);
+
+z-index:2;
+
+object-fit:contain;
+
+filter:
+drop-shadow(0 20px 40px rgba(0,0,0,.9))
+drop-shadow(0 0 25px rgba(245,189,40,.13));
+
+animation:
+eagleFloat 6s ease-in-out infinite;
+}
+
+@keyframes eagleFloat{
+
+0%,100%{
+transform:
+translateY(-50%)
+scale(1);
+}
+
+50%{
+transform:
+translateY(calc(-50% - 10px))
+scale(1.015);
+}
+}
+
+.hero-content{
+width:min(1250px,92%);
+margin:auto;
+
+position:relative;
+z-index:4;
+
+padding-top:82px;
+}
+
+.eyebrow{
+display:inline-flex;
+align-items:center;
+gap:9px;
+
+color:var(--gold2);
+
+font-size:11px;
+font-weight:900;
+
+text-transform:uppercase;
+letter-spacing:3px;
+
+margin-bottom:22px;
+}
+
+.eyebrow::before{
+content:"";
+
+width:35px;
+height:2px;
+
+background:
+linear-gradient(
+90deg,
+var(--red),
+var(--gold)
+);
+}
+
+.hero h1{
+max-width:720px;
+
+font-size:
+clamp(
+52px,
+7.5vw,
+102px
+);
+
+line-height:.86;
+
+letter-spacing:-5px;
+
+font-weight:1000;
+
+text-transform:uppercase;
+}
+
+.hero h1 .white{
+color:#fff;
+}
+
+.hero h1 .red{
+color:var(--red);
+}
+
+.hero h1 .gold{
+color:var(--gold);
+}
+
+.hero-description{
+max-width:570px;
+
+color:#aaa;
+
+font-size:17px;
+
+line-height:1.75;
+
+margin-top:30px;
+}
+
+.hero-actions{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+
+margin-top:32px;
+}
+
+.btn{
+display:inline-flex;
+
+align-items:center;
+justify-content:center;
+
+min-height:50px;
+
+padding:
+0 24px;
+
+border-radius:3px;
+
+font-size:11px;
+
+font-weight:1000;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+transition:
+transform .25s,
+box-shadow .25s,
+background .25s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.btn-red{
+color:#fff;
+
+background:
+linear-gradient(
+135deg,
+var(--red),
+#a80e14
+);
+
+box-shadow:
+0 10px 30px rgba(215,25,32,.22);
+}
+
+.btn-gold{
+color:#090909;
+
+background:
+linear-gradient(
+135deg,
+var(--gold2),
+var(--gold)
+);
+
+box-shadow:
+0 10px 30px rgba(245,189,40,.17);
+}
+
+.btn-outline{
+border:
+1px solid rgba(255,255,255,.23);
+
+background:
+rgba(255,255,255,.03);
+
+color:#fff;
+}
+
+.btn-outline:hover{
+border-color:var(--gold);
+color:var(--gold);
+}
+
+.scroll{
+position:absolute;
+
+bottom:28px;
+left:50%;
+
+transform:translateX(-50%);
+
+z-index:4;
+
+color:#686868;
+
+font-size:9px;
+font-weight:800;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+}
+
+
+/* =========================================================
+SECTION GENERAL
+========================================================= */
+
+.section{
+width:min(1250px,92%);
+margin:auto;
+
+padding:105px 0;
+}
+
+.section-top{
+display:flex;
+
+align-items:flex-end;
+justify-content:space-between;
+
+gap:30px;
+
+margin-bottom:45px;
+}
+
+.small-title{
+color:var(--gold);
+
+font-size:10px;
+font-weight:900;
+
+text-transform:uppercase;
+letter-spacing:3px;
+
+margin-bottom:10px;
+}
+
+.section-title{
+font-size:
+clamp(
+35px,
+5vw,
+60px
+);
+
+line-height:.94;
+
+font-weight:1000;
+
+text-transform:uppercase;
+
+letter-spacing:-2px;
+}
+
+.section-title span{
+color:var(--red);
+}
+
+.section-text{
+max-width:510px;
+
+color:#929298;
+
+font-size:15px;
+line-height:1.7;
+}
+
+
+/* =========================================================
+IDENTITY
+========================================================= */
+
+.identity{
+position:relative;
+
+background:
+radial-gradient(
+circle at 15% 50%,
+rgba(215,25,32,.10),
+transparent 30%
+),
+
+#080808;
+}
+
+.identity-grid{
+display:grid;
+
+grid-template-columns:
+.9fr
+1.1fr;
+
+gap:75px;
+
+align-items:center;
+}
+
+.secondary-logo{
+position:relative;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+min-height:540px;
+
+background:
+radial-gradient(
+circle,
+rgba(143,22,141,.18),
+transparent 55%
+);
+
+overflow:hidden;
+}
+
+.secondary-logo::before{
+content:"";
+
+position:absolute;
+
+width:440px;
+height:440px;
+
+border-radius:50%;
+
+border:
+1px solid rgba(245,189,40,.18);
+
+box-shadow:
+0 0 70px rgba(143,22,141,.16);
+}
+
+.secondary-logo img{
+width:min(440px,90%);
+
+position:relative;
+z-index:2;
+
+filter:
+drop-shadow(0 20px 35px rgba(0,0,0,.8))
+drop-shadow(0 0 30px rgba(229,43,196,.16));
+
+transition:.5s;
+}
+
+.secondary-logo:hover img{
+transform:
+scale(1.04)
+rotate(-2deg);
+}
+
+.identity-copy p{
+color:#999;
+
+margin:
+22px 0;
+}
+
+.identity-highlight{
+margin-top:30px;
+
+padding:20px 22px;
+
+border-left:
+3px solid var(--gold);
+
+background:
+linear-gradient(
+90deg,
+rgba(245,189,40,.08),
+transparent
+);
+}
+
+.identity-highlight strong{
+display:block;
+
+color:#fff;
+
+font-size:18px;
+}
+
+.identity-highlight span{
+color:#777;
+
+font-size:12px;
+}
+
+
+/* =========================================================
+VALUES
+========================================================= */
+
+.values{
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:15px;
+
+margin-top:35px;
+}
+
+.value{
+padding:25px;
+
+background:#111;
+
+border:
+1px solid var(--border);
+
+position:relative;
+
+overflow:hidden;
+}
+
+.value::after{
+content:"";
+
+position:absolute;
+
+width:70px;
+height:70px;
+
+right:-25px;
+bottom:-25px;
+
+border-radius:50%;
+
+background:
+rgba(215,25,32,.13);
+}
+
+.value-number{
+color:var(--gold);
+
+font-size:12px;
+font-weight:1000;
+}
+
+.value h3{
+font-size:17px;
+
+margin-top:12px;
+
+text-transform:uppercase;
+}
+
+.value p{
+color:#777;
+
+font-size:12px;
+
+margin-top:7px;
+}
+
+
+/* =========================================================
+TEAMS
+========================================================= */
+
+.teams{
+background:
+linear-gradient(
+180deg,
+#070707,
+#0d080b
+);
+}
+
+.team-grid{
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:18px;
+}
+
+.team{
+position:relative;
+
+min-height:390px;
+
+overflow:hidden;
+
+background:#111;
+
+border:
+1px solid rgba(255,255,255,.08);
+}
+
+.team img{
+width:100%;
+height:390px;
+
+object-fit:cover;
+
+filter:
+saturate(.9)
+contrast(1.05);
+
+transition:.6s;
+}
+
+.team:hover img{
+transform:scale(1.07);
+}
+
+.team-overlay{
+position:absolute;
+
+inset:0;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:flex-end;
+
+padding:28px;
+
+background:
+linear-gradient(
+transparent 30%,
+rgba(0,0,0,.96)
+);
+}
+
+.team-label{
+color:var(--gold);
+
+font-size:10px;
+
+font-weight:900;
+
+text-transform:uppercase;
+
+letter-spacing:2px;
+}
+
+.team h3{
+font-size:28px;
+
+text-transform:uppercase;
+
+line-height:1;
+
+margin-top:7px;
+}
+
+
+/* =========================================================
+MATCHES
+========================================================= */
+
+.matches{
+background:#050505;
+}
+
+.match-list{
+display:grid;
+gap:10px;
+}
+
+.match{
+display:grid;
+
+grid-template-columns:
+160px
+1fr
+160px;
+
+align-items:center;
+
+padding:
+20px 25px;
+
+background:
+linear-gradient(
+90deg,
+#111,
+#151113
+);
+
+border:
+1px solid rgba(255,255,255,.07);
+
+transition:.25s;
+}
+
+.match:hover{
+border-color:
+rgba(245,189,40,.4);
+}
+
+.match-date{
+color:var(--gold);
+
+font-size:10px;
+
+font-weight:900;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+}
+
+.match-teams{
+text-align:center;
+
+font-weight:1000;
+
+font-size:16px;
+}
+
+.match-teams span{
+color:var(--red);
+
+margin:
+0 16px;
+}
+
+.match-location{
+color:#666;
+
+text-align:right;
+
+font-size:10px;
+
+text-transform:uppercase;
+}
+
+
+/* =========================================================
+NEWS
+========================================================= */
+
+.news{
+background:
+radial-gradient(
+circle at 90% 30%,
+rgba(143,22,141,.12),
+transparent 30%
+),
+#090909;
+}
+
+.news-grid{
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:18px;
+}
+
+.news-card{
+background:#111;
+
+border:
+1px solid rgba(255,255,255,.08);
+
+overflow:hidden;
+}
+
+.news-image{
+height:225px;
+
+overflow:hidden;
+}
+
+.news-image img{
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+}
+
+.news-card:hover img{
+transform:scale(1.07);
+}
+
+.news-body{
+padding:23px;
+}
+
+.news-category{
+color:var(--gold);
+
+font-size:9px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+}
+
+.news-body h3{
+font-size:21px;
+
+line-height:1.15;
+
+margin:
+10px 0;
+}
+
+.news-body p{
+color:#777;
+
+font-size:13px;
+}
+
+
+/* =========================================================
+RESULTS
+========================================================= */
+
+.results{
+background:
+linear-gradient(
+135deg,
+#080808,
+#13070b
+);
+}
+
+.results-grid{
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:20px;
+}
+
+.result-card{
+padding:30px;
+
+background:#111;
+
+border:
+1px solid rgba(255,255,255,.08);
+}
+
+.result-card h3{
+color:var(--gold);
+
+font-size:11px;
+
+text-transform:uppercase;
+
+letter-spacing:2px;
+
+margin-bottom:25px;
+}
+
+.score{
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+gap:20px;
+
+text-align:center;
+}
+
+.score-team{
+font-size:13px;
+
+font-weight:900;
+
+max-width:110px;
+}
+
+.score-number{
+font-size:50px;
+
+line-height:1;
+
+font-weight:1000;
+}
+
+.score-number.gold{
+color:var(--gold);
+}
+
+.vs{
+color:#555;
+
+font-weight:900;
+}
+
+
+/* =========================================================
+TABLE
+========================================================= */
+
+.table{
+width:100%;
+
+border-collapse:collapse;
+}
+
+.table th{
+color:#666;
+
+font-size:9px;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+text-align:left;
+
+padding:9px;
+
+border-bottom:
+1px solid #292929;
+}
+
+.table td{
+padding:12px 9px;
+
+border-bottom:
+1px solid #202020;
+
+font-size:12px;
+}
+
+.table td:last-child,
+.table th:last-child{
+text-align:right;
+}
+
+.table .position{
+color:var(--gold);
+
+font-weight:1000;
+}
+
+
+/* =========================================================
+DIGITAL / APP
+========================================================= */
+
+.digital{
+width:min(1250px,92%);
+
+margin:
+0 auto 105px;
+}
+
+.digital-box{
+position:relative;
+
+overflow:hidden;
+
+min-height:480px;
+
+display:flex;
+
+align-items:center;
+
+padding:65px;
+
+background:
+radial-gradient(
+circle at 80% 50%,
+rgba(143,22,141,.30),
+transparent 35%
+),
+
+linear-gradient(
+120deg,
+#130709,
+#090909
+);
+
+border:
+1px solid rgba(245,189,40,.18);
+}
+
+.digital-box::before{
+content:"";
+
+position:absolute;
+
+width:450px;
+height:450px;
+
+right:-100px;
+top:-100px;
+
+border-radius:50%;
+
+border:
+1px solid rgba(245,189,40,.12);
+}
+
+.digital-secondary{
+position:absolute;
+
+width:330px;
+
+right:9%;
+
+opacity:.85;
+
+filter:
+drop-shadow(0 20px 35px rgba(0,0,0,.8))
+drop-shadow(0 0 30px rgba(143,22,141,.25));
+}
+
+.digital-content{
+max-width:650px;
+
+position:relative;
+
+z-index:3;
+}
+
+.digital-content h2{
+font-size:
+clamp(
+38px,
+5vw,
+65px
+);
+
+line-height:.9;
+
+text-transform:uppercase;
+}
+
+.digital-content h2 span{
+color:var(--gold);
+}
+
+.digital-content p{
+color:#999;
+
+margin:
+22px 0 30px;
+
+max-width:570px;
+}
+
+
+/* =========================================================
+SPONSORS
+========================================================= */
+
+.sponsors{
+text-align:center;
+}
+
+.sponsor-grid{
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:12px;
+
+margin-top:40px;
+}
+
+.sponsor{
+min-height:100px;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+color:#666;
+
+background:#101010;
+
+border:
+1px solid #202020;
+
+font-weight:1000;
+
+font-size:12px;
+
+transition:.25s;
+}
+
+.sponsor:hover{
+color:var(--gold);
+
+border-color:
+rgba(245,189,40,.5);
+}
+
+
+/* =========================================================
+CONTACT
+========================================================= */
+
+.contact{
+position:relative;
+
+overflow:hidden;
+
+background:
+radial-gradient(
+circle at 50% 0%,
+rgba(215,25,32,.20),
+transparent 38%
+),
+#060606;
+}
+
+.contact-content{
+text-align:center;
+
+max-width:800px;
+
+margin:auto;
+}
+
+.contact-content h2{
+font-size:
+clamp(
+42px,
+6vw,
+76px
+);
+
+line-height:.88;
+
+text-transform:uppercase;
+}
+
+.contact-content h2 span{
+color:var(--red);
+}
+
+.contact-content p{
+color:#888;
+
+margin:
+23px auto 30px;
+
+max-width:600px;
+}
+
+.contact-buttons{
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:12px;
+}
+
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+footer{
+background:#030303;
+
+border-top:
+1px solid #1c1c1c;
+
+padding:
+35px 20px;
+}
+
+.footer{
+width:min(1250px,92%);
+
+margin:auto;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:20px;
+}
+
+.footer-brand{
+font-size:18px;
+
+font-weight:1000;
+
+text-transform:uppercase;
+}
+
+.footer-brand span{
+color:var(--gold);
+}
+
+.footer-copy{
+color:#555;
+
+font-size:10px;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+}
+
+
+/* =========================================================
+ANIMACIONES
+========================================================= */
+
+.reveal{
+opacity:0;
+
+transform:
+translateY(35px);
+
+transition:
+opacity .8s ease,
+transform .8s ease;
+}
+
+.reveal.visible{
+opacity:1;
+
+transform:
+translateY(0);
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media(max-width:950px){
+
+.menu-button{
+display:block;
+}
+
+.menu{
+display:none;
+
+position:absolute;
+
+top:82px;
+left:0;
+
+width:100%;
+
+padding:25px;
+
+flex-direction:column;
+
+align-items:flex-start;
+
+background:#080808;
+
+border-bottom:
+1px solid #252525;
+}
+
+.menu.open{
+display:flex;
+}
+
+.hero-main{
+width:65vw;
+
+right:-10%;
+
+opacity:.42;
+}
+
+.hero::before{
+background:
+linear-gradient(
+90deg,
+rgba(3,3,3,.97),
+rgba(3,3,3,.80)
+);
+}
+
+.identity-grid{
+grid-template-columns:1fr;
+
+gap:35px;
+}
+
+.secondary-logo{
+min-height:430px;
+}
+
+.team-grid,
+.news-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.match{
+grid-template-columns:
+1fr;
+
+gap:12px;
+
+text-align:center;
+}
+
+.match-location{
+text-align:center;
+}
+
+.results-grid{
+grid-template-columns:1fr;
+}
+
+.digital-box{
+padding:50px 35px;
+}
+
+.digital-secondary{
+opacity:.2;
+
+right:-100px;
+}
+
+.sponsor-grid{
+grid-template-columns:1fr 1fr;
+}
+}
+
+
+@media(max-width:600px){
+
+.header{
+height:70px;
+}
+
+.brand-logo{
+width:38px;
+height:46px;
+}
+
+.brand-text{
+font-size:16px;
+}
+
+.menu{
+top:70px;
+}
+
+.hero{
+min-height:780px;
+}
+
+.hero-content{
+padding-top:70px;
+}
+
+.hero-main{
+width:100vw;
+
+right:-28%;
+
+top:43%;
+
+opacity:.27;
+}
+
+.hero h1{
+letter-spacing:-3px;
+}
+
+.hero-description{
+font-size:15px;
+}
+
+.hero-actions{
+flex-direction:column;
+}
+
+.hero-actions .btn{
+width:100%;
+}
+
+.section{
+padding:75px 0;
+}
+
+.section-top{
+display:block;
+}
+
+.section-text{
+margin-top:20px;
+}
+
+.secondary-logo{
+min-height:350px;
+}
+
+.secondary-logo img{
+width:85%;
+}
+
+.values{
+grid-template-columns:1fr;
+}
+
+.team-grid,
+.news-grid{
+grid-template-columns:1fr;
+}
+
+.team{
+min-height:350px;
+}
+
+.team img{
+height:350px;
+}
+
+.digital{
+margin-bottom:75px;
+}
+
+.digital-box{
+min-height:500px;
+
+padding:
+40px 25px;
+}
+
+.digital-secondary{
+width:280px;
+
+right:-100px;
+
+bottom:-50px;
+}
+
+.sponsor-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.footer{
+flex-direction:column;
+
+text-align:center;
+}
+
+}
+
 </style>
 </head>
+
+
 <body>
-<div class="top"><div class="container"><span>🇫🇷 Entreprise française • Intervention France • UE</span><span>📞 07 46 79 33 20 • ✉️ dbl.peinture.placo@gmail.com</span></div></div>
-<header><div class="container nav">
-<a class="logo" href="#accueil"><img src="/storage/emulated/0/MYDocuments/DBL HABITAT/assets/dbl-logo.png" alt="DBL Habitat"><span>DBL HABITAT<small>PEINTURE • PLÂTRERIE • RÉNOVATION</small></span></a>
-<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
-<nav><a href="#accueil">Accueil</a><a href="#services">Services</a><a href="#entreprise">Entreprise</a><a href="#realisations">Réalisations</a><a href="#contact">Contact</a><a class="btn primary" href="#contact">Devis gratuit</a></nav>
-</div></header>
 
-<section class="hero" id="accueil"><div class="container heroGrid"><div>
-<span class="badge">QUALITÉ • FINITION • DURABILITÉ</span>
-<h1>Votre intérieur,<br><span>notre métier.</span></h1>
-<p>DBL Habitat vous accompagne pour vos travaux de peinture, plâtrerie, placoplâtre,vitrerie,isolation et rénovation intérieure & extérieure.</p>
-<div class="actions"><a class="btn primary" href="#contact">Demander un devis gratuit</a><a class="btn outline" href="tel:+33746793320">Appeler DBL HABITAT</a></div>
-</div><div><img src="/storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-publicite.png" alt="DBL Habitat - peinture et rénovation"></div></div></section>
 
-<div class="trust"><div class="container trustGrid">
-<div><strong>Devis gratuit</strong><small>Sans engagement</small></div><div><strong>Travail soigné</strong><small>Finitions professionnelles</small></div><div><strong>Délais respectés</strong><small>Organisation de chantier</small></div><div><strong>Garantie décennale</strong><small>Selon travaux et contrat</small></div>
-</div></div>
+<!-- =====================================================
+HEADER
+===================================================== -->
 
-<section class="services" id="services"><div class="container"><div class="head"><span class="kicker">Nos métiers</span><h2>Des solutions complètes pour vos bâtiments</h2><p>Un seul interlocuteur pour transformer, rénover et embellir vos espaces.</p></div>
-<div class="cards">
-<article class="card"><div class="icon">🎨</div><h3>Peinture intérieure</h3><p>Murs, plafonds, portes et finitions décoratives avec préparation soignée des supports.</p></article>
-<article class="card"><div class="icon">🏠</div><h3>Peinture extérieure</h3><p>Façades, murs extérieurs et éléments du bâtiment remis en état avec soin.</p></article>
-<article class="card"><div class="icon">▦</div><h3>Placo & cloisons</h3><p>Cloisons, doublages, faux plafonds et aménagement des volumes.</p></article>
-<article class="card"><div class="icon">🧱</div><h3>Plâtrerie</h3><p>Enduits, joints, rebouchage, lissage et préparation des surfaces.</p></article>
-<article class="card"><div class="icon">◉</div><h3>Isolation</h3><p>Solutions d'isolation adaptées à la configuration du bâtiment.</p></article>
-<article class="card"><div class="icon">✨</div><h3>Rénovation complète</h3><p>Coordination de travaux pour moderniser vos espaces.</p></article>
-</div></div></section>
+<header class="header">
 
-<section id="entreprise"><div class="container about"><div class="aboutImg"><img src="/storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-identification.png" alt="Carte d'identification DBL"></div><div>
-<span class="kicker">DBL Habitat</span><h2>Une entreprise orientée qualité et résultat</h2><p>Travaux de peinture, plâtrerie, placoplâtre et rénovation avec une attention particulière portée à la préparation, aux finitions et à la propreté du chantier.</p>
-<div class="checks"><div class="check"><b>✓</b>Étude des besoins et devis personnalisé</div><div class="check"><b>✓</b>Matériaux et méthodes adaptés au chantier</div><div class="check"><b>✓</b>Suivi des travaux et communication claire</div><div class="check"><b>✓</b>Nettoyage et remise en état en fin d'intervention</div></div>
-<div class="stats"><div class="stat"><strong>DBL HABITAT</strong><span>Votre partenaire</span></div><div class="stat"><strong>6+</strong><span>Domaines</span></div><div class="stat"><strong>100%</strong><span>Engagement qualité</span></div></div>
-</div></div></section>
+<nav class="nav">
 
-<section class="gallery" id="realisations"><div class="container"><div class="head"><span class="kicker">Nos réalisations</span><h2>Avant, pendant, après</h2><p>Visuels de présentation DBL. Vous pourrez remplacer ces images par vos propres photos de chantiers.</p></div>
-<div class="galleryGrid"><img src="/storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-publicite.png" alt="Présentation DBL"><img src=" /storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-logo.png" alt="Logo DBL"><img src="/storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-identification.png" alt="Entreprise DBL"></div></div></section>
+<a href="#inicio" class="brand">
 
-<section class="cta"><div class="container ctaGrid"><div><span class="kicker">Votre projet</span><h2>Parlons de vos travaux</h2><p>Envoyez-nous les informations de votre projet pour préparer votre demande de devis.</p></div><a class="btn primary" href="#contact">Obtenir mon devis</a></div></section>
+<img
+src="C:\Users\Lotfi-Pc\Desktop\escudo1.jpeg"
+class="brand-logo"
+alt="Real Sports Club">
 
-<section id="contact"><div class="container"><div class="head"><span class="kicker">Contact</span><h2>Demandez votre devis gratuit</h2><p>Particuliers, professionnels et gestionnaires de bâtiments.</p></div>
-<div class="contact"><div class="contactBox"><h3>DBL Habitat</h3>
-<div class="item"><small>Téléphone France</small><a href="tel:+33746793320">07 46 79 33 20</a></div>
-<div class="item"><small>WhatsApp / Espagne</small><a href="https://wa.me/34647783111" target="_blank">+34 647 783 111</a></div>
-<div class="item"><small>E-mail</small><a href="mailto:dbl.peinture.placo@gmail.com">dbl.peinture.placo@gmail.com</a></div>
-<div class="item"><small>Adresse</small>6 Rue Bergonier, 69100 Villeurbanne</div>
+<div class="brand-text">
+Real Sports <span>Club</span>
 </div>
-<form class="form" onsubmit="sendQuote(event)"><div class="grid">
-<div class="field"><label>Nom *</label><input id="nom" required></div><div class="field"><label>Téléphone *</label><input id="tel" required></div>
-<div class="field"><label>E-mail</label><input id="email" type="email"></div><div class="field"><label>Travaux</label><select id="travaux"><option>Peinture intérieure</option><option>Peinture extérieure</option><option>Placo / cloisons</option><option>Plâtrerie / enduits</option><option>Isolation</option><option>Rénovation complète</option></select></div>
-<div class="field full"><label>Votre projet *</label><textarea id="message" required placeholder="Ville, surface, travaux souhaités..."></textarea></div>
-<div class="field full"><button class="btn primary" type="submit">Envoyer ma demande</button></div>
-</div></form></div></div></section>
-</main>
-<footer><div class="container"><div class="foot"><div><h3>DBL Habitat</h3><p>Peinture • Plâtrerie • Placoplâtre • Vitrerie • Rénovation.</p></div><div><h3>Navigation</h3><p><a href="#services">Services</a><br><a href="#entreprise">Entreprise</a><br><a href="#realisations">Réalisations</a></p></div><div><h3>Contact</h3><p>07 46 79 33 20<br>dbl.peinture.placo@gmail.com<br>Villeurbanne</p></div></div><div class="copy"><span>© <span id="year"></span> DBL Habitat DKHILALLI BOUAZZI LOTFI</span><span>Qualité • Finition • Durabilité</span></div></div></footer>
-<div class="float"><a href="tel:+33746793320">☎</a><a href="https://wa.me/34647783111" target="_blank">☘</a></div>
-<script>
-document.getElementById("year").textContent=new Date().getFullYear();
-function sendQuote(e){e.preventDefault();let b="Nom : "+nom.value+"\nTéléphone : "+tel.value+"\nE-mail : "+email.value+"\nTravaux : "+travaux.value+"\n\nProjet :\n"+message.value;location.href="mailto:dbl.peinture.placo@gmail.com?subject="+encodeURIComponent("Demande de devis DBL - "+travaux.value)+"&body="+encodeURIComponent(b)}
-</script>
-</body></html>
+
+</a>
+
+
+<button
+class="menu-button"
+onclick="toggleMenu()"
+aria-label="Abrir menú">
+☰
+</button>
+
+
+<ul class="menu" id="menu">
+
+<li>
+<a href="#inicio">Inicio</a>
+</li>
+
