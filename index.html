@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="DBL Habitat - Peinture, plâtrerie, placoplâtre et rénovation.">
+<title>DBL Habitat | Peinture • Plâtrerie • Rénovation</title>
+<style>
+:root{--b:#06265f;--o:#ff7800;--bg:#f5f8fc;--txt:#10213d;--mut:#60708b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:var(--txt);line-height:1.55}
+.container{width:min(1180px,92%);margin:auto}.top{background:var(--b);color:white;padding:9px 0;font-size:14px}.top .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:10;background:#fffffff5;box-shadow:0 3px 18px #0001}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--b);font-size:22px}.logo img{width:62px;height:52px;object-fit:contain}.logo small{display:block;color:var(--o);font-size:10px;letter-spacing:1px}
+nav{display:flex;align-items:center;gap:22px;font-weight:bold;font-size:14px}nav a{text-decoration:none;color:inherit}nav a:hover{color:var(--o)}.menu{display:none;background:none;border:0;font-size:28px;color:var(--b)}
+.btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:800;text-decoration:none;border:2px solid var(--b);cursor:pointer}.primary{background:var(--o);border-color:var(--o);color:#fff}.outline{color:var(--b)}
+.hero{background:linear-gradient(135deg,#f8fbff,#eaf1fb);padding:65px 0}.heroGrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.badge{display:inline-block;background:#e6efff;color:var(--b);padding:8px 14px;border-radius:99px;font-weight:bold;font-size:13px}
+h1{font-size:clamp(42px,6vw,70px);line-height:1;margin:18px 0;color:var(--b)}h1 span{color:var(--o)}.hero p{font-size:19px;color:var(--mut);max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.hero img{width:100%;max-height:570px;object-fit:contain}
+.trust{background:var(--b);color:#fff;padding:18px 0}.trustGrid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;gap:12px}.trust strong{display:block;font-size:18px}.trust small{opacity:.75}
+section{padding:75px 0}.head{text-align:center;max-width:760px;margin:0 auto 40px}.kicker{color:var(--o);font-size:13px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}h2{font-size:clamp(30px,4vw,45px);line-height:1.1;color:var(--b);margin:8px 0 12px}.head p{color:var(--mut)}
+.services{background:var(--bg)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;padding:27px;border-radius:18px;box-shadow:0 12px 35px #06265f18;border:1px solid #e5ebf4}.icon{width:54px;height:54px;border-radius:14px;background:#fff0e5;color:var(--o);display:grid;place-items:center;font-size:25px}.card h3{color:var(--b);margin:15px 0 7px}.card p{color:var(--mut);font-size:15px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.aboutImg{border-radius:20px;overflow:hidden;box-shadow:0 15px 40px #06265f20}.aboutImg img{width:100%;display:block}.checks{display:grid;gap:11px;margin:20px 0}.check b{color:var(--o);margin-right:9px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:var(--bg);border-radius:12px;padding:16px;text-align:center}.stat strong{display:block;color:var(--b);font-size:25px}
+.gallery{background:var(--bg)}.galleryGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.galleryGrid img{width:100%;height:290px;object-fit:cover;border-radius:15px;box-shadow:0 12px 30px #0002}
+.cta{background:linear-gradient(120deg,var(--b),#0b55ae);color:#fff}.ctaGrid{display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{color:#fff}.cta p{max-width:650px;opacity:.88}
+.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px}.contactBox{background:var(--b);color:#fff;border-radius:20px;padding:30px}.contactBox h3{font-size:27px}.item{padding:13px 0;border-bottom:1px solid #ffffff22}.item small{display:block;opacity:.65;text-transform:uppercase;font-size:10px}.item a{color:#fff}.form{padding:30px;border-radius:20px;box-shadow:0 12px 35px #06265f18;border:1px solid #e2e8f1}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.full{grid-column:1/-1}label{font-weight:bold;color:var(--b);font-size:13px}input,select,textarea{padding:13px;border:1px solid #d3ddea;border-radius:9px;font:inherit}textarea{min-height:130px;resize:vertical}
+footer{background:#071a3d;color:#d9e4f6;padding:40px 0 18px}.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.foot h3{color:#fff}.foot a{color:#d9e4f6}.copy{border-top:1px solid #ffffff20;margin-top:25px;padding-top:15px;font-size:12px;display:flex;justify-content:space-between}
+.float{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:9px;z-index:20}.float a{width:52px;height:52px;border-radius:50%;background:var(--o);color:#fff;display:grid;place-items:center;font-size:21px;text-decoration:none;box-shadow:0 8px 20px #0003}
+@media(max-width:850px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px;flex-direction:column}nav.open{display:flex}.menu{display:block}.heroGrid,.about,.contact{grid-template-columns:1fr}.cards,.galleryGrid{grid-template-columns:1fr 1fr}.trustGrid{grid-template-columns:1fr 1fr}.ctaGrid{flex-direction:column;align-items:flex-start}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cards,.galleryGrid,.grid,.stats,.foot{grid-template-columns:1fr}.copy{flex-direction:column}.top .container{justify-content:center;text-align:center}}
+</style>
+</head>
+<body>
+<div class="top"><div class="container"><span>🇫🇷 Entreprise française • Intervention France • UE</span><span>📞 07 46 79 33 20 • ✉️ dbl.peinture.placo@gmail.com</span></div></div>
+<header><div class="container nav">
+<a class="logo" href="#accueil"><img src="/storage/emulated/0/MYDocuments/DBL HABITAT/assets/dbl-logo.png" alt="DBL Habitat"><span>DBL HABITAT<small>PEINTURE • PLÂTRERIE • RÉNOVATION</small></span></a>
+<button class="menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav><a href="#accueil">Accueil</a><a href="#services">Services</a><a href="#entreprise">Entreprise</a><a href="#realisations">Réalisations</a><a href="#contact">Contact</a><a class="btn primary" href="#contact">Devis gratuit</a></nav>
+</div></header>
+
+<section class="hero" id="accueil"><div class="container heroGrid"><div>
+<span class="badge">QUALITÉ • FINITION • DURABILITÉ</span>
+<h1>Votre intérieur,<br><span>notre métier.</span></h1>
+<p>DBL Habitat vous accompagne pour vos travaux de peinture, plâtrerie, placoplâtre,vitrerie,isolation et rénovation intérieure & extérieure.</p>
+<div class="actions"><a class="btn primary" href="#contact">Demander un devis gratuit</a><a class="btn outline" href="tel:+33746793320">Appeler DBL HABITAT</a></div>
+</div><div><img src="/storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-publicite.png" alt="DBL Habitat - peinture et rénovation"></div></div></section>
+
+<div class="trust"><div class="container trustGrid">
+<div><strong>Devis gratuit</strong><small>Sans engagement</small></div><div><strong>Travail soigné</strong><small>Finitions professionnelles</small></div><div><strong>Délais respectés</strong><small>Organisation de chantier</small></div><div><strong>Garantie décennale</strong><small>Selon travaux et contrat</small></div>
+</div></div>
+
+<section class="services" id="services"><div class="container"><div class="head"><span class="kicker">Nos métiers</span><h2>Des solutions complètes pour vos bâtiments</h2><p>Un seul interlocuteur pour transformer, rénover et embellir vos espaces.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">🎨</div><h3>Peinture intérieure</h3><p>Murs, plafonds, portes et finitions décoratives avec préparation soignée des supports.</p></article>
+<article class="card"><div class="icon">🏠</div><h3>Peinture extérieure</h3><p>Façades, murs extérieurs et éléments du bâtiment remis en état avec soin.</p></article>
+<article class="card"><div class="icon">▦</div><h3>Placo & cloisons</h3><p>Cloisons, doublages, faux plafonds et aménagement des volumes.</p></article>
+<article class="card"><div class="icon">🧱</div><h3>Plâtrerie</h3><p>Enduits, joints, rebouchage, lissage et préparation des surfaces.</p></article>
+<article class="card"><div class="icon">◉</div><h3>Isolation</h3><p>Solutions d'isolation adaptées à la configuration du bâtiment.</p></article>
+<article class="card"><div class="icon">✨</div><h3>Rénovation complète</h3><p>Coordination de travaux pour moderniser vos espaces.</p></article>
+</div></div></section>
+
+<section id="entreprise"><div class="container about"><div class="aboutImg"><img src="/storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-identification.png" alt="Carte d'identification DBL"></div><div>
+<span class="kicker">DBL Habitat</span><h2>Une entreprise orientée qualité et résultat</h2><p>Travaux de peinture, plâtrerie, placoplâtre et rénovation avec une attention particulière portée à la préparation, aux finitions et à la propreté du chantier.</p>
+<div class="checks"><div class="check"><b>✓</b>Étude des besoins et devis personnalisé</div><div class="check"><b>✓</b>Matériaux et méthodes adaptés au chantier</div><div class="check"><b>✓</b>Suivi des travaux et communication claire</div><div class="check"><b>✓</b>Nettoyage et remise en état en fin d'intervention</div></div>
+<div class="stats"><div class="stat"><strong>DBL HABITAT</strong><span>Votre partenaire</span></div><div class="stat"><strong>6+</strong><span>Domaines</span></div><div class="stat"><strong>100%</strong><span>Engagement qualité</span></div></div>
+</div></div></section>
+
+<section class="gallery" id="realisations"><div class="container"><div class="head"><span class="kicker">Nos réalisations</span><h2>Avant, pendant, après</h2><p>Visuels de présentation DBL. Vous pourrez remplacer ces images par vos propres photos de chantiers.</p></div>
+<div class="galleryGrid"><img src="/storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-publicite.png" alt="Présentation DBL"><img src=" /storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-logo.png" alt="Logo DBL"><img src="/storage/emulated/0/MyDocuments/DBL HABITAT/assets/dbl-identification.png" alt="Entreprise DBL"></div></div></section>
+
+<section class="cta"><div class="container ctaGrid"><div><span class="kicker">Votre projet</span><h2>Parlons de vos travaux</h2><p>Envoyez-nous les informations de votre projet pour préparer votre demande de devis.</p></div><a class="btn primary" href="#contact">Obtenir mon devis</a></div></section>
+
+<section id="contact"><div class="container"><div class="head"><span class="kicker">Contact</span><h2>Demandez votre devis gratuit</h2><p>Particuliers, professionnels et gestionnaires de bâtiments.</p></div>
+<div class="contact"><div class="contactBox"><h3>DBL Habitat</h3>
+<div class="item"><small>Téléphone France</small><a href="tel:+33746793320">07 46 79 33 20</a></div>
+<div class="item"><small>WhatsApp / Espagne</small><a href="https://wa.me/34647783111" target="_blank">+34 647 783 111</a></div>
+<div class="item"><small>E-mail</small><a href="mailto:dbl.peinture.placo@gmail.com">dbl.peinture.placo@gmail.com</a></div>
+<div class="item"><small>Adresse</small>6 Rue Bergonier, 69100 Villeurbanne</div>
+</div>
+<form class="form" onsubmit="sendQuote(event)"><div class="grid">
+<div class="field"><label>Nom *</label><input id="nom" required></div><div class="field"><label>Téléphone *</label><input id="tel" required></div>
+<div class="field"><label>E-mail</label><input id="email" type="email"></div><div class="field"><label>Travaux</label><select id="travaux"><option>Peinture intérieure</option><option>Peinture extérieure</option><option>Placo / cloisons</option><option>Plâtrerie / enduits</option><option>Isolation</option><option>Rénovation complète</option></select></div>
+<div class="field full"><label>Votre projet *</label><textarea id="message" required placeholder="Ville, surface, travaux souhaités..."></textarea></div>
+<div class="field full"><button class="btn primary" type="submit">Envoyer ma demande</button></div>
+</div></form></div></div></section>
+</main>
+<footer><div class="container"><div class="foot"><div><h3>DBL Habitat</h3><p>Peinture • Plâtrerie • Placoplâtre • Vitrerie • Rénovation.</p></div><div><h3>Navigation</h3><p><a href="#services">Services</a><br><a href="#entreprise">Entreprise</a><br><a href="#realisations">Réalisations</a></p></div><div><h3>Contact</h3><p>07 46 79 33 20<br>dbl.peinture.placo@gmail.com<br>Villeurbanne</p></div></div><div class="copy"><span>© <span id="year"></span> DBL Habitat DKHILALLI BOUAZZI LOTFI</span><span>Qualité • Finition • Durabilité</span></div></div></footer>
+<div class="float"><a href="tel:+33746793320">☎</a><a href="https://wa.me/34647783111" target="_blank">☘</a></div>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+function sendQuote(e){e.preventDefault();let b="Nom : "+nom.value+"\nTéléphone : "+tel.value+"\nE-mail : "+email.value+"\nTravaux : "+travaux.value+"\n\nProjet :\n"+message.value;location.href="mailto:dbl.peinture.placo@gmail.com?subject="+encodeURIComponent("Demande de devis DBL - "+travaux.value)+"&body="+encodeURIComponent(b)}
+</script>
+</body></html>
