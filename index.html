@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,1634 +12,1634 @@ content="Real Sports Club - Sports Academy. Deporte, formación, competición y 
 <style>
 
 /* =========================================================
-SPORTS CLUB
-DISEÑO PRINCIPAL
+   SPORTS CLUB
+   DISEÑO PRINCIPAL
 ========================================================= */
 
 :root{
---black:#050505;
---black2:#0b0b0d;
---black3:#111116;
+    --black:#050505;
+    --black2:#0b0b0d;
+    --black3:#111116;
 
---gold:#f5bd28;
---gold2:#ffd966;
---gold-dark:#8d6410;
+    --gold:#f5bd28;
+    --gold2:#ffd966;
+    --gold-dark:#8d6410;
 
---red:#d71920;
---red2:#ff3038;
+    --red:#d71920;
+    --red2:#ff3038;
 
---purple:#8d168d;
---purple2:#e52bc4;
+    --purple:#8d168d;
+    --purple2:#e52bc4;
 
---white:#ffffff;
---gray:#a9a9af;
---gray2:#6e6e75;
+    --white:#ffffff;
+    --gray:#a9a9af;
+    --gray2:#6e6e75;
 
---border:rgba(255,255,255,.10);
+    --border:rgba(255,255,255,.10);
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-background:var(--black);
-color:#fff;
-font-family:
-Inter,
-Arial,
-Helvetica,
-sans-serif;
-overflow-x:hidden;
+    background:var(--black);
+    color:#fff;
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+    overflow-x:hidden;
 }
 
 a{
-text-decoration:none;
-color:inherit;
+    text-decoration:none;
+    color:inherit;
 }
 
 img{
-max-width:100%;
-display:block;
+    max-width:100%;
+    display:block;
 }
 
 button{
-font-family:inherit;
+    font-family:inherit;
 }
 
 
 /* =========================================================
-SCROLLBAR
+   SCROLLBAR
 ========================================================= */
 
 ::-webkit-scrollbar{
-width:8px;
+    width:8px;
 }
 
 ::-webkit-scrollbar-track{
-background:#050505;
+    background:#050505;
 }
 
 ::-webkit-scrollbar-thumb{
-background:linear-gradient(
-var(--red),
-var(--gold)
-);
-border-radius:20px;
+    background:linear-gradient(
+        var(--red),
+        var(--gold)
+    );
+    border-radius:20px;
 }
 
 
 /* =========================================================
-HEADER
+   HEADER
 ========================================================= */
 
 .header{
-position:fixed;
-z-index:9999;
-top:0;
-left:0;
-width:100%;
-height:82px;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    height:82px;
 
-background:
-linear-gradient(
-90deg,
-rgba(0,0,0,.96),
-rgba(5,5,5,.82)
-);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.96),
+            rgba(5,5,5,.82)
+        );
 
-backdrop-filter:blur(15px);
+    backdrop-filter:blur(15px);
 
-border-bottom:
-1px solid rgba(245,189,40,.18);
+    border-bottom:
+        1px solid rgba(245,189,40,.18);
 }
 
 .nav{
-width:min(1250px,92%);
-height:100%;
-margin:auto;
+    width:min(1250px,92%);
+    height:100%;
+    margin:auto;
 
-display:flex;
-align-items:center;
-justify-content:space-between;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .brand{
-display:flex;
-align-items:center;
-gap:12px;
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
 .brand-logo{
-width:47px;
-height:57px;
+    width:47px;
+    height:57px;
 
-object-fit:contain;
+    object-fit:contain;
 
-filter:
-drop-shadow(0 0 10px rgba(245,189,40,.25));
+    filter:
+        drop-shadow(0 0 10px rgba(245,189,40,.25));
 }
 
 .brand-text{
-font-size:20px;
-font-weight:1000;
-letter-spacing:1px;
-text-transform:uppercase;
+    font-size:20px;
+    font-weight:1000;
+    letter-spacing:1px;
+    text-transform:uppercase;
 }
 
 .brand-text span{
-color:var(--gold);
+    color:var(--gold);
 }
 
 .menu{
-display:flex;
-align-items:center;
-gap:27px;
-list-style:none;
+    display:flex;
+    align-items:center;
+    gap:27px;
+    list-style:none;
 }
 
 .menu a{
-color:#d6d6d6;
-font-size:12px;
-font-weight:800;
-text-transform:uppercase;
-letter-spacing:.8px;
-transition:.25s;
+    color:#d6d6d6;
+    font-size:12px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.8px;
+    transition:.25s;
 }
 
 .menu a:hover{
-color:var(--gold);
+    color:var(--gold);
 }
 
 .menu-button{
-display:none;
+    display:none;
 
-background:none;
-border:0;
+    background:none;
+    border:0;
 
-color:#fff;
-font-size:28px;
-cursor:pointer;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
 }
 
 
 /* =========================================================
-HERO
+   HERO
 ========================================================= */
 
 .hero{
-min-height:100vh;
-position:relative;
+    min-height:100vh;
+    position:relative;
 
-display:flex;
-align-items:center;
+    display:flex;
+    align-items:center;
 
-overflow:hidden;
+    overflow:hidden;
 
-background:
-radial-gradient(
-circle at 82% 48%,
-rgba(142,22,141,.28),
-transparent 28%
-),
+    background:
+        radial-gradient(
+            circle at 82% 48%,
+            rgba(142,22,141,.28),
+            transparent 28%
+        ),
 
-radial-gradient(
-circle at 78% 65%,
-rgba(215,25,32,.16),
-transparent 32%
-),
+        radial-gradient(
+            circle at 78% 65%,
+            rgba(215,25,32,.16),
+            transparent 32%
+        ),
 
-#030303;
+        #030303;
 }
 
 .hero::before{
-content:"";
+    content:"";
 
-position:absolute;
-inset:0;
+    position:absolute;
+    inset:0;
 
-background:
-linear-gradient(
-90deg,
-#030303 0%,
-rgba(3,3,3,.96) 28%,
-rgba(3,3,3,.62) 55%,
-rgba(3,3,3,.18) 100%
-);
+    background:
+        linear-gradient(
+            90deg,
+            #030303 0%,
+            rgba(3,3,3,.96) 28%,
+            rgba(3,3,3,.62) 55%,
+            rgba(3,3,3,.18) 100%
+        );
 
-z-index:1;
+    z-index:1;
 }
 
 .hero::after{
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-width:650px;
-height:650px;
+    width:650px;
+    height:650px;
 
-right:-220px;
-top:100px;
+    right:-220px;
+    top:100px;
 
-border-radius:50%;
+    border-radius:50%;
 
-border:
-1px solid rgba(245,189,40,.12);
+    border:
+        1px solid rgba(245,189,40,.12);
 
-box-shadow:
-0 0 80px rgba(245,189,40,.06);
+    box-shadow:
+        0 0 80px rgba(245,189,40,.06);
 
-z-index:1;
+    z-index:1;
 }
 
 .hero-main{
-position:absolute;
+    position:absolute;
 
-width:min(580px,52vw);
+    width:min(580px,52vw);
 
-right:6%;
-top:50%;
+    right:6%;
+    top:50%;
 
-transform:
-translateY(-50%);
+    transform:
+        translateY(-50%);
 
-z-index:2;
+    z-index:2;
 
-object-fit:contain;
+    object-fit:contain;
 
-filter:
-drop-shadow(0 20px 40px rgba(0,0,0,.9))
-drop-shadow(0 0 25px rgba(245,189,40,.13));
+    filter:
+        drop-shadow(0 20px 40px rgba(0,0,0,.9))
+        drop-shadow(0 0 25px rgba(245,189,40,.13));
 
-animation:
-eagleFloat 6s ease-in-out infinite;
+    animation:
+        eagleFloat 6s ease-in-out infinite;
 }
 
 @keyframes eagleFloat{
 
-0%,100%{
-transform:
-translateY(-50%)
-scale(1);
-}
+    0%,100%{
+        transform:
+            translateY(-50%)
+            scale(1);
+    }
 
-50%{
-transform:
-translateY(calc(-50% - 10px))
-scale(1.015);
-}
+    50%{
+        transform:
+            translateY(calc(-50% - 10px))
+            scale(1.015);
+    }
 }
 
 .hero-content{
-width:min(1250px,92%);
-margin:auto;
+    width:min(1250px,92%);
+    margin:auto;
 
-position:relative;
-z-index:4;
+    position:relative;
+    z-index:4;
 
-padding-top:82px;
+    padding-top:82px;
 }
 
 .eyebrow{
-display:inline-flex;
-align-items:center;
-gap:9px;
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
 
-color:var(--gold2);
+    color:var(--gold2);
 
-font-size:11px;
-font-weight:900;
+    font-size:11px;
+    font-weight:900;
 
-text-transform:uppercase;
-letter-spacing:3px;
+    text-transform:uppercase;
+    letter-spacing:3px;
 
-margin-bottom:22px;
+    margin-bottom:22px;
 }
 
 .eyebrow::before{
-content:"";
+    content:"";
 
-width:35px;
-height:2px;
+    width:35px;
+    height:2px;
 
-background:
-linear-gradient(
-90deg,
-var(--red),
-var(--gold)
-);
+    background:
+        linear-gradient(
+            90deg,
+            var(--red),
+            var(--gold)
+        );
 }
 
 .hero h1{
-max-width:720px;
+    max-width:720px;
 
-font-size:
-clamp(
-52px,
-7.5vw,
-102px
-);
+    font-size:
+        clamp(
+            52px,
+            7.5vw,
+            102px
+        );
 
-line-height:.86;
+    line-height:.86;
 
-letter-spacing:-5px;
+    letter-spacing:-5px;
 
-font-weight:1000;
+    font-weight:1000;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 .hero h1 .white{
-color:#fff;
+    color:#fff;
 }
 
 .hero h1 .red{
-color:var(--red);
+    color:var(--red);
 }
 
 .hero h1 .gold{
-color:var(--gold);
+    color:var(--gold);
 }
 
 .hero-description{
-max-width:570px;
+    max-width:570px;
 
-color:#aaa;
+    color:#aaa;
 
-font-size:17px;
+    font-size:17px;
 
-line-height:1.75;
+    line-height:1.75;
 
-margin-top:30px;
+    margin-top:30px;
 }
 
 .hero-actions{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
 
-margin-top:32px;
+    margin-top:32px;
 }
 
 .btn{
-display:inline-flex;
+    display:inline-flex;
 
-align-items:center;
-justify-content:center;
+    align-items:center;
+    justify-content:center;
 
-min-height:50px;
+    min-height:50px;
 
-padding:
-0 24px;
+    padding:
+        0 24px;
 
-border-radius:3px;
+    border-radius:3px;
 
-font-size:11px;
+    font-size:11px;
 
-font-weight:1000;
+    font-weight:1000;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-letter-spacing:1px;
+    letter-spacing:1px;
 
-transition:
-transform .25s,
-box-shadow .25s,
-background .25s;
+    transition:
+        transform .25s,
+        box-shadow .25s,
+        background .25s;
 }
 
 .btn:hover{
-transform:translateY(-3px);
+    transform:translateY(-3px);
 }
 
 .btn-red{
-color:#fff;
+    color:#fff;
 
-background:
-linear-gradient(
-135deg,
-var(--red),
-#a80e14
-);
+    background:
+        linear-gradient(
+            135deg,
+            var(--red),
+            #a80e14
+        );
 
-box-shadow:
-0 10px 30px rgba(215,25,32,.22);
+    box-shadow:
+        0 10px 30px rgba(215,25,32,.22);
 }
 
 .btn-gold{
-color:#090909;
+    color:#090909;
 
-background:
-linear-gradient(
-135deg,
-var(--gold2),
-var(--gold)
-);
+    background:
+        linear-gradient(
+            135deg,
+            var(--gold2),
+            var(--gold)
+        );
 
-box-shadow:
-0 10px 30px rgba(245,189,40,.17);
+    box-shadow:
+        0 10px 30px rgba(245,189,40,.17);
 }
 
 .btn-outline{
-border:
-1px solid rgba(255,255,255,.23);
+    border:
+        1px solid rgba(255,255,255,.23);
 
-background:
-rgba(255,255,255,.03);
+    background:
+        rgba(255,255,255,.03);
 
-color:#fff;
+    color:#fff;
 }
 
 .btn-outline:hover{
-border-color:var(--gold);
-color:var(--gold);
+    border-color:var(--gold);
+    color:var(--gold);
 }
 
 .scroll{
-position:absolute;
+    position:absolute;
 
-bottom:28px;
-left:50%;
+    bottom:28px;
+    left:50%;
 
-transform:translateX(-50%);
+    transform:translateX(-50%);
 
-z-index:4;
+    z-index:4;
 
-color:#686868;
+    color:#686868;
 
-font-size:9px;
-font-weight:800;
+    font-size:9px;
+    font-weight:800;
 
-letter-spacing:3px;
+    letter-spacing:3px;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 
 /* =========================================================
-SECTION GENERAL
+   SECTION GENERAL
 ========================================================= */
 
 .section{
-width:min(1250px,92%);
-margin:auto;
+    width:min(1250px,92%);
+    margin:auto;
 
-padding:105px 0;
+    padding:105px 0;
 }
 
 .section-top{
-display:flex;
+    display:flex;
 
-align-items:flex-end;
-justify-content:space-between;
+    align-items:flex-end;
+    justify-content:space-between;
 
-gap:30px;
+    gap:30px;
 
-margin-bottom:45px;
+    margin-bottom:45px;
 }
 
 .small-title{
-color:var(--gold);
+    color:var(--gold);
 
-font-size:10px;
-font-weight:900;
+    font-size:10px;
+    font-weight:900;
 
-text-transform:uppercase;
-letter-spacing:3px;
+    text-transform:uppercase;
+    letter-spacing:3px;
 
-margin-bottom:10px;
+    margin-bottom:10px;
 }
 
 .section-title{
-font-size:
-clamp(
-35px,
-5vw,
-60px
-);
+    font-size:
+        clamp(
+            35px,
+            5vw,
+            60px
+        );
 
-line-height:.94;
+    line-height:.94;
 
-font-weight:1000;
+    font-weight:1000;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-letter-spacing:-2px;
+    letter-spacing:-2px;
 }
 
 .section-title span{
-color:var(--red);
+    color:var(--red);
 }
 
 .section-text{
-max-width:510px;
+    max-width:510px;
 
-color:#929298;
+    color:#929298;
 
-font-size:15px;
-line-height:1.7;
+    font-size:15px;
+    line-height:1.7;
 }
 
 
 /* =========================================================
-IDENTITY
+   IDENTITY
 ========================================================= */
 
 .identity{
-position:relative;
+    position:relative;
 
-background:
-radial-gradient(
-circle at 15% 50%,
-rgba(215,25,32,.10),
-transparent 30%
-),
+    background:
+        radial-gradient(
+            circle at 15% 50%,
+            rgba(215,25,32,.10),
+            transparent 30%
+        ),
 
-#080808;
+        #080808;
 }
 
 .identity-grid{
-display:grid;
+    display:grid;
 
-grid-template-columns:
-.9fr
-1.1fr;
+    grid-template-columns:
+        .9fr
+        1.1fr;
 
-gap:75px;
+    gap:75px;
 
-align-items:center;
+    align-items:center;
 }
 
 .secondary-logo{
-position:relative;
+    position:relative;
 
-display:flex;
+    display:flex;
 
-align-items:center;
-justify-content:center;
+    align-items:center;
+    justify-content:center;
 
-min-height:540px;
+    min-height:540px;
 
-background:
-radial-gradient(
-circle,
-rgba(143,22,141,.18),
-transparent 55%
-);
+    background:
+        radial-gradient(
+            circle,
+            rgba(143,22,141,.18),
+            transparent 55%
+        );
 
-overflow:hidden;
+    overflow:hidden;
 }
 
 .secondary-logo::before{
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-width:440px;
-height:440px;
+    width:440px;
+    height:440px;
 
-border-radius:50%;
+    border-radius:50%;
 
-border:
-1px solid rgba(245,189,40,.18);
+    border:
+        1px solid rgba(245,189,40,.18);
 
-box-shadow:
-0 0 70px rgba(143,22,141,.16);
+    box-shadow:
+        0 0 70px rgba(143,22,141,.16);
 }
 
 .secondary-logo img{
-width:min(440px,90%);
+    width:min(440px,90%);
 
-position:relative;
-z-index:2;
+    position:relative;
+    z-index:2;
 
-filter:
-drop-shadow(0 20px 35px rgba(0,0,0,.8))
-drop-shadow(0 0 30px rgba(229,43,196,.16));
+    filter:
+        drop-shadow(0 20px 35px rgba(0,0,0,.8))
+        drop-shadow(0 0 30px rgba(229,43,196,.16));
 
-transition:.5s;
+    transition:.5s;
 }
 
 .secondary-logo:hover img{
-transform:
-scale(1.04)
-rotate(-2deg);
+    transform:
+        scale(1.04)
+        rotate(-2deg);
 }
 
 .identity-copy p{
-color:#999;
+    color:#999;
 
-margin:
-22px 0;
+    margin:
+        22px 0;
 }
 
 .identity-highlight{
-margin-top:30px;
+    margin-top:30px;
 
-padding:20px 22px;
+    padding:20px 22px;
 
-border-left:
-3px solid var(--gold);
+    border-left:
+        3px solid var(--gold);
 
-background:
-linear-gradient(
-90deg,
-rgba(245,189,40,.08),
-transparent
-);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(245,189,40,.08),
+            transparent
+        );
 }
 
 .identity-highlight strong{
-display:block;
+    display:block;
 
-color:#fff;
+    color:#fff;
 
-font-size:18px;
+    font-size:18px;
 }
 
 .identity-highlight span{
-color:#777;
+    color:#777;
 
-font-size:12px;
+    font-size:12px;
 }
 
 
 /* =========================================================
-VALUES
+   VALUES
 ========================================================= */
 
 .values{
-display:grid;
+    display:grid;
 
-grid-template-columns:
-repeat(3,1fr);
+    grid-template-columns:
+        repeat(3,1fr);
 
-gap:15px;
+    gap:15px;
 
-margin-top:35px;
+    margin-top:35px;
 }
 
 .value{
-padding:25px;
+    padding:25px;
 
-background:#111;
+    background:#111;
 
-border:
-1px solid var(--border);
+    border:
+        1px solid var(--border);
 
-position:relative;
+    position:relative;
 
-overflow:hidden;
+    overflow:hidden;
 }
 
 .value::after{
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-width:70px;
-height:70px;
+    width:70px;
+    height:70px;
 
-right:-25px;
-bottom:-25px;
+    right:-25px;
+    bottom:-25px;
 
-border-radius:50%;
+    border-radius:50%;
 
-background:
-rgba(215,25,32,.13);
+    background:
+        rgba(215,25,32,.13);
 }
 
 .value-number{
-color:var(--gold);
+    color:var(--gold);
 
-font-size:12px;
-font-weight:1000;
+    font-size:12px;
+    font-weight:1000;
 }
 
 .value h3{
-font-size:17px;
+    font-size:17px;
 
-margin-top:12px;
+    margin-top:12px;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 .value p{
-color:#777;
+    color:#777;
 
-font-size:12px;
+    font-size:12px;
 
-margin-top:7px;
+    margin-top:7px;
 }
 
 
 /* =========================================================
-TEAMS
+   TEAMS
 ========================================================= */
 
 .teams{
-background:
-linear-gradient(
-180deg,
-#070707,
-#0d080b
-);
+    background:
+        linear-gradient(
+            180deg,
+            #070707,
+            #0d080b
+        );
 }
 
 .team-grid{
-display:grid;
+    display:grid;
 
-grid-template-columns:
-repeat(3,1fr);
+    grid-template-columns:
+        repeat(3,1fr);
 
-gap:18px;
+    gap:18px;
 }
 
 .team{
-position:relative;
+    position:relative;
 
-min-height:390px;
+    min-height:390px;
 
-overflow:hidden;
+    overflow:hidden;
 
-background:#111;
+    background:#111;
 
-border:
-1px solid rgba(255,255,255,.08);
+    border:
+        1px solid rgba(255,255,255,.08);
 }
 
 .team img{
-width:100%;
-height:390px;
+    width:100%;
+    height:390px;
 
-object-fit:cover;
+    object-fit:cover;
 
-filter:
-saturate(.9)
-contrast(1.05);
+    filter:
+        saturate(.9)
+        contrast(1.05);
 
-transition:.6s;
+    transition:.6s;
 }
 
 .team:hover img{
-transform:scale(1.07);
+    transform:scale(1.07);
 }
 
 .team-overlay{
-position:absolute;
+    position:absolute;
 
-inset:0;
+    inset:0;
 
-display:flex;
+    display:flex;
 
-flex-direction:column;
+    flex-direction:column;
 
-justify-content:flex-end;
+    justify-content:flex-end;
 
-padding:28px;
+    padding:28px;
 
-background:
-linear-gradient(
-transparent 30%,
-rgba(0,0,0,.96)
-);
+    background:
+        linear-gradient(
+            transparent 30%,
+            rgba(0,0,0,.96)
+        );
 }
 
 .team-label{
-color:var(--gold);
+    color:var(--gold);
 
-font-size:10px;
+    font-size:10px;
 
-font-weight:900;
+    font-weight:900;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-letter-spacing:2px;
+    letter-spacing:2px;
 }
 
 .team h3{
-font-size:28px;
+    font-size:28px;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-line-height:1;
+    line-height:1;
 
-margin-top:7px;
+    margin-top:7px;
 }
 
 
 /* =========================================================
-MATCHES
+   MATCHES
 ========================================================= */
 
 .matches{
-background:#050505;
+    background:#050505;
 }
 
 .match-list{
-display:grid;
-gap:10px;
+    display:grid;
+    gap:10px;
 }
 
 .match{
-display:grid;
+    display:grid;
 
-grid-template-columns:
-160px
-1fr
-160px;
+    grid-template-columns:
+        160px
+        1fr
+        160px;
 
-align-items:center;
+    align-items:center;
 
-padding:
-20px 25px;
+    padding:
+        20px 25px;
 
-background:
-linear-gradient(
-90deg,
-#111,
-#151113
-);
+    background:
+        linear-gradient(
+            90deg,
+            #111,
+            #151113
+        );
 
-border:
-1px solid rgba(255,255,255,.07);
+    border:
+        1px solid rgba(255,255,255,.07);
 
-transition:.25s;
+    transition:.25s;
 }
 
 .match:hover{
-border-color:
-rgba(245,189,40,.4);
+    border-color:
+        rgba(245,189,40,.4);
 }
 
 .match-date{
-color:var(--gold);
+    color:var(--gold);
 
-font-size:10px;
+    font-size:10px;
 
-font-weight:900;
+    font-weight:900;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-letter-spacing:1px;
+    letter-spacing:1px;
 }
 
 .match-teams{
-text-align:center;
+    text-align:center;
 
-font-weight:1000;
+    font-weight:1000;
 
-font-size:16px;
+    font-size:16px;
 }
 
 .match-teams span{
-color:var(--red);
+    color:var(--red);
 
-margin:
-0 16px;
+    margin:
+        0 16px;
 }
 
 .match-location{
-color:#666;
+    color:#666;
 
-text-align:right;
+    text-align:right;
 
-font-size:10px;
+    font-size:10px;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 
 /* =========================================================
-NEWS
+   NEWS
 ========================================================= */
 
 .news{
-background:
-radial-gradient(
-circle at 90% 30%,
-rgba(143,22,141,.12),
-transparent 30%
-),
-#090909;
+    background:
+        radial-gradient(
+            circle at 90% 30%,
+            rgba(143,22,141,.12),
+            transparent 30%
+        ),
+        #090909;
 }
 
 .news-grid{
-display:grid;
+    display:grid;
 
-grid-template-columns:
-repeat(3,1fr);
+    grid-template-columns:
+        repeat(3,1fr);
 
-gap:18px;
+    gap:18px;
 }
 
 .news-card{
-background:#111;
+    background:#111;
 
-border:
-1px solid rgba(255,255,255,.08);
+    border:
+        1px solid rgba(255,255,255,.08);
 
-overflow:hidden;
+    overflow:hidden;
 }
 
 .news-image{
-height:225px;
+    height:225px;
 
-overflow:hidden;
+    overflow:hidden;
 }
 
 .news-image img{
-width:100%;
-height:100%;
+    width:100%;
+    height:100%;
 
-object-fit:cover;
+    object-fit:cover;
 
-transition:.5s;
+    transition:.5s;
 }
 
 .news-card:hover img{
-transform:scale(1.07);
+    transform:scale(1.07);
 }
 
 .news-body{
-padding:23px;
+    padding:23px;
 }
 
 .news-category{
-color:var(--gold);
+    color:var(--gold);
 
-font-size:9px;
+    font-size:9px;
 
-font-weight:900;
+    font-weight:900;
 
-letter-spacing:2px;
+    letter-spacing:2px;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 .news-body h3{
-font-size:21px;
+    font-size:21px;
 
-line-height:1.15;
+    line-height:1.15;
 
-margin:
-10px 0;
+    margin:
+        10px 0;
 }
 
 .news-body p{
-color:#777;
+    color:#777;
 
-font-size:13px;
+    font-size:13px;
 }
 
 
 /* =========================================================
-RESULTS
+   RESULTS
 ========================================================= */
 
 .results{
-background:
-linear-gradient(
-135deg,
-#080808,
-#13070b
-);
+    background:
+        linear-gradient(
+            135deg,
+            #080808,
+            #13070b
+        );
 }
 
 .results-grid{
-display:grid;
+    display:grid;
 
-grid-template-columns:
-1fr 1fr;
+    grid-template-columns:
+        1fr 1fr;
 
-gap:20px;
+    gap:20px;
 }
 
 .result-card{
-padding:30px;
+    padding:30px;
 
-background:#111;
+    background:#111;
 
-border:
-1px solid rgba(255,255,255,.08);
+    border:
+        1px solid rgba(255,255,255,.08);
 }
 
 .result-card h3{
-color:var(--gold);
+    color:var(--gold);
 
-font-size:11px;
+    font-size:11px;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-letter-spacing:2px;
+    letter-spacing:2px;
 
-margin-bottom:25px;
+    margin-bottom:25px;
 }
 
 .score{
-display:flex;
+    display:flex;
 
-align-items:center;
-justify-content:center;
+    align-items:center;
+    justify-content:center;
 
-gap:20px;
+    gap:20px;
 
-text-align:center;
+    text-align:center;
 }
 
 .score-team{
-font-size:13px;
+    font-size:13px;
 
-font-weight:900;
+    font-weight:900;
 
-max-width:110px;
+    max-width:110px;
 }
 
 .score-number{
-font-size:50px;
+    font-size:50px;
 
-line-height:1;
+    line-height:1;
 
-font-weight:1000;
+    font-weight:1000;
 }
 
 .score-number.gold{
-color:var(--gold);
+    color:var(--gold);
 }
 
 .vs{
-color:#555;
+    color:#555;
 
-font-weight:900;
+    font-weight:900;
 }
 
 
 /* =========================================================
-TABLE
+   TABLE
 ========================================================= */
 
 .table{
-width:100%;
+    width:100%;
 
-border-collapse:collapse;
+    border-collapse:collapse;
 }
 
 .table th{
-color:#666;
+    color:#666;
 
-font-size:9px;
+    font-size:9px;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-letter-spacing:1px;
+    letter-spacing:1px;
 
-text-align:left;
+    text-align:left;
 
-padding:9px;
+    padding:9px;
 
-border-bottom:
-1px solid #292929;
+    border-bottom:
+        1px solid #292929;
 }
 
 .table td{
-padding:12px 9px;
+    padding:12px 9px;
 
-border-bottom:
-1px solid #202020;
+    border-bottom:
+        1px solid #202020;
 
-font-size:12px;
+    font-size:12px;
 }
 
 .table td:last-child,
 .table th:last-child{
-text-align:right;
+    text-align:right;
 }
 
 .table .position{
-color:var(--gold);
+    color:var(--gold);
 
-font-weight:1000;
+    font-weight:1000;
 }
 
 
 /* =========================================================
-DIGITAL / APP
+   DIGITAL / APP
 ========================================================= */
 
 .digital{
-width:min(1250px,92%);
+    width:min(1250px,92%);
 
-margin:
-0 auto 105px;
+    margin:
+        0 auto 105px;
 }
 
 .digital-box{
-position:relative;
+    position:relative;
 
-overflow:hidden;
+    overflow:hidden;
 
-min-height:480px;
+    min-height:480px;
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-padding:65px;
+    padding:65px;
 
-background:
-radial-gradient(
-circle at 80% 50%,
-rgba(143,22,141,.30),
-transparent 35%
-),
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(143,22,141,.30),
+            transparent 35%
+        ),
 
-linear-gradient(
-120deg,
-#130709,
-#090909
-);
+        linear-gradient(
+            120deg,
+            #130709,
+            #090909
+        );
 
-border:
-1px solid rgba(245,189,40,.18);
+    border:
+        1px solid rgba(245,189,40,.18);
 }
 
 .digital-box::before{
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-width:450px;
-height:450px;
+    width:450px;
+    height:450px;
 
-right:-100px;
-top:-100px;
+    right:-100px;
+    top:-100px;
 
-border-radius:50%;
+    border-radius:50%;
 
-border:
-1px solid rgba(245,189,40,.12);
+    border:
+        1px solid rgba(245,189,40,.12);
 }
 
 .digital-secondary{
-position:absolute;
+    position:absolute;
 
-width:330px;
+    width:330px;
 
-right:9%;
+    right:9%;
 
-opacity:.85;
+    opacity:.85;
 
-filter:
-drop-shadow(0 20px 35px rgba(0,0,0,.8))
-drop-shadow(0 0 30px rgba(143,22,141,.25));
+    filter:
+        drop-shadow(0 20px 35px rgba(0,0,0,.8))
+        drop-shadow(0 0 30px rgba(143,22,141,.25));
 }
 
 .digital-content{
-max-width:650px;
+    max-width:650px;
 
-position:relative;
+    position:relative;
 
-z-index:3;
+    z-index:3;
 }
 
 .digital-content h2{
-font-size:
-clamp(
-38px,
-5vw,
-65px
-);
+    font-size:
+        clamp(
+            38px,
+            5vw,
+            65px
+        );
 
-line-height:.9;
+    line-height:.9;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 .digital-content h2 span{
-color:var(--gold);
+    color:var(--gold);
 }
 
 .digital-content p{
-color:#999;
+    color:#999;
 
-margin:
-22px 0 30px;
+    margin:
+        22px 0 30px;
 
-max-width:570px;
+    max-width:570px;
 }
 
 
 /* =========================================================
-SPONSORS
+   SPONSORS
 ========================================================= */
 
 .sponsors{
-text-align:center;
+    text-align:center;
 }
 
 .sponsor-grid{
-display:grid;
+    display:grid;
 
-grid-template-columns:
-repeat(4,1fr);
+    grid-template-columns:
+        repeat(4,1fr);
 
-gap:12px;
+    gap:12px;
 
-margin-top:40px;
+    margin-top:40px;
 }
 
 .sponsor{
-min-height:100px;
+    min-height:100px;
 
-display:flex;
+    display:flex;
 
-align-items:center;
-justify-content:center;
+    align-items:center;
+    justify-content:center;
 
-color:#666;
+    color:#666;
 
-background:#101010;
+    background:#101010;
 
-border:
-1px solid #202020;
+    border:
+        1px solid #202020;
 
-font-weight:1000;
+    font-weight:1000;
 
-font-size:12px;
+    font-size:12px;
 
-transition:.25s;
+    transition:.25s;
 }
 
 .sponsor:hover{
-color:var(--gold);
+    color:var(--gold);
 
-border-color:
-rgba(245,189,40,.5);
+    border-color:
+        rgba(245,189,40,.5);
 }
 
 
 /* =========================================================
-CONTACT
+   CONTACT
 ========================================================= */
 
 .contact{
-position:relative;
+    position:relative;
 
-overflow:hidden;
+    overflow:hidden;
 
-background:
-radial-gradient(
-circle at 50% 0%,
-rgba(215,25,32,.20),
-transparent 38%
-),
-#060606;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(215,25,32,.20),
+            transparent 38%
+        ),
+        #060606;
 }
 
 .contact-content{
-text-align:center;
+    text-align:center;
 
-max-width:800px;
+    max-width:800px;
 
-margin:auto;
+    margin:auto;
 }
 
 .contact-content h2{
-font-size:
-clamp(
-42px,
-6vw,
-76px
-);
+    font-size:
+        clamp(
+            42px,
+            6vw,
+            76px
+        );
 
-line-height:.88;
+    line-height:.88;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 .contact-content h2 span{
-color:var(--red);
+    color:var(--red);
 }
 
 .contact-content p{
-color:#888;
+    color:#888;
 
-margin:
-23px auto 30px;
+    margin:
+        23px auto 30px;
 
-max-width:600px;
+    max-width:600px;
 }
 
 .contact-buttons{
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-flex-wrap:wrap;
+    flex-wrap:wrap;
 
-gap:12px;
+    gap:12px;
 }
 
 
 /* =========================================================
-FOOTER
+   FOOTER
 ========================================================= */
 
 footer{
-background:#030303;
+    background:#030303;
 
-border-top:
-1px solid #1c1c1c;
+    border-top:
+        1px solid #1c1c1c;
 
-padding:
-35px 20px;
+    padding:
+        35px 20px;
 }
 
 .footer{
-width:min(1250px,92%);
+    width:min(1250px,92%);
 
-margin:auto;
+    margin:auto;
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-gap:20px;
+    gap:20px;
 }
 
 .footer-brand{
-font-size:18px;
+    font-size:18px;
 
-font-weight:1000;
+    font-weight:1000;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 }
 
 .footer-brand span{
-color:var(--gold);
+    color:var(--gold);
 }
 
 .footer-copy{
-color:#555;
+    color:#555;
 
-font-size:10px;
+    font-size:10px;
 
-text-transform:uppercase;
+    text-transform:uppercase;
 
-letter-spacing:1px;
+    letter-spacing:1px;
 }
 
 
 /* =========================================================
-ANIMACIONES
+   ANIMACIONES
 ========================================================= */
 
 .reveal{
-opacity:0;
+    opacity:0;
 
-transform:
-translateY(35px);
+    transform:
+        translateY(35px);
 
-transition:
-opacity .8s ease,
-transform .8s ease;
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
 }
 
 .reveal.visible{
-opacity:1;
+    opacity:1;
 
-transform:
-translateY(0);
+    transform:
+        translateY(0);
 }
 
 
 /* =========================================================
-MOBILE
+   MOBILE
 ========================================================= */
 
 @media(max-width:950px){
 
-.menu-button{
-display:block;
-}
+    .menu-button{
+        display:block;
+    }
 
-.menu{
-display:none;
+    .menu{
+        display:none;
 
-position:absolute;
+        position:absolute;
 
-top:82px;
-left:0;
+        top:82px;
+        left:0;
 
-width:100%;
+        width:100%;
 
-padding:25px;
+        padding:25px;
 
-flex-direction:column;
+        flex-direction:column;
 
-align-items:flex-start;
+        align-items:flex-start;
 
-background:#080808;
+        background:#080808;
 
-border-bottom:
-1px solid #252525;
-}
+        border-bottom:
+            1px solid #252525;
+    }
 
-.menu.open{
-display:flex;
-}
+    .menu.open{
+        display:flex;
+    }
 
-.hero-main{
-width:65vw;
+    .hero-main{
+        width:65vw;
 
-right:-10%;
+        right:-10%;
 
-opacity:.42;
-}
+        opacity:.42;
+    }
 
-.hero::before{
-background:
-linear-gradient(
-90deg,
-rgba(3,3,3,.97),
-rgba(3,3,3,.80)
-);
-}
+    .hero::before{
+        background:
+            linear-gradient(
+                90deg,
+                rgba(3,3,3,.97),
+                rgba(3,3,3,.80)
+            );
+    }
 
-.identity-grid{
-grid-template-columns:1fr;
+    .identity-grid{
+        grid-template-columns:1fr;
 
-gap:35px;
-}
+        gap:35px;
+    }
 
-.secondary-logo{
-min-height:430px;
-}
+    .secondary-logo{
+        min-height:430px;
+    }
 
-.team-grid,
-.news-grid{
-grid-template-columns:1fr 1fr;
-}
+    .team-grid,
+    .news-grid{
+        grid-template-columns:1fr 1fr;
+    }
 
-.match{
-grid-template-columns:
-1fr;
+    .match{
+        grid-template-columns:
+            1fr;
 
-gap:12px;
+        gap:12px;
 
-text-align:center;
-}
+        text-align:center;
+    }
 
-.match-location{
-text-align:center;
-}
+    .match-location{
+        text-align:center;
+    }
 
-.results-grid{
-grid-template-columns:1fr;
-}
+    .results-grid{
+        grid-template-columns:1fr;
+    }
 
-.digital-box{
-padding:50px 35px;
-}
+    .digital-box{
+        padding:50px 35px;
+    }
 
-.digital-secondary{
-opacity:.2;
+    .digital-secondary{
+        opacity:.2;
 
-right:-100px;
-}
+        right:-100px;
+    }
 
-.sponsor-grid{
-grid-template-columns:1fr 1fr;
-}
+    .sponsor-grid{
+        grid-template-columns:1fr 1fr;
+    }
 }
 
 
 @media(max-width:600px){
 
-.header{
-height:70px;
-}
+    .header{
+        height:70px;
+    }
 
-.brand-logo{
-width:38px;
-height:46px;
-}
+    .brand-logo{
+        width:38px;
+        height:46px;
+    }
 
-.brand-text{
-font-size:16px;
-}
+    .brand-text{
+        font-size:16px;
+    }
 
-.menu{
-top:70px;
-}
+    .menu{
+        top:70px;
+    }
 
-.hero{
-min-height:780px;
-}
+    .hero{
+        min-height:780px;
+    }
 
-.hero-content{
-padding-top:70px;
-}
+    .hero-content{
+        padding-top:70px;
+    }
 
-.hero-main{
-width:100vw;
+    .hero-main{
+        width:100vw;
 
-right:-28%;
+        right:-28%;
 
-top:43%;
+        top:43%;
 
-opacity:.27;
-}
+        opacity:.27;
+    }
 
-.hero h1{
-letter-spacing:-3px;
-}
+    .hero h1{
+        letter-spacing:-3px;
+    }
 
-.hero-description{
-font-size:15px;
-}
+    .hero-description{
+        font-size:15px;
+    }
 
-.hero-actions{
-flex-direction:column;
-}
+    .hero-actions{
+        flex-direction:column;
+    }
 
-.hero-actions .btn{
-width:100%;
-}
+    .hero-actions .btn{
+        width:100%;
+    }
 
-.section{
-padding:75px 0;
-}
+    .section{
+        padding:75px 0;
+    }
 
-.section-top{
-display:block;
-}
+    .section-top{
+        display:block;
+    }
 
-.section-text{
-margin-top:20px;
-}
+    .section-text{
+        margin-top:20px;
+    }
 
-.secondary-logo{
-min-height:350px;
-}
+    .secondary-logo{
+        min-height:350px;
+    }
 
-.secondary-logo img{
-width:85%;
-}
+    .secondary-logo img{
+        width:85%;
+    }
 
-.values{
-grid-template-columns:1fr;
-}
+    .values{
+        grid-template-columns:1fr;
+    }
 
-.team-grid,
-.news-grid{
-grid-template-columns:1fr;
-}
+    .team-grid,
+    .news-grid{
+        grid-template-columns:1fr;
+    }
 
-.team{
-min-height:350px;
-}
+    .team{
+        min-height:350px;
+    }
 
-.team img{
-height:350px;
-}
+    .team img{
+        height:350px;
+    }
 
-.digital{
-margin-bottom:75px;
-}
+    .digital{
+        margin-bottom:75px;
+    }
 
-.digital-box{
-min-height:500px;
+    .digital-box{
+        min-height:500px;
 
-padding:
-40px 25px;
-}
+        padding:
+            40px 25px;
+    }
 
-.digital-secondary{
-width:280px;
+    .digital-secondary{
+        width:280px;
 
-right:-100px;
+        right:-100px;
 
-bottom:-50px;
-}
+        bottom:-50px;
+    }
 
-.sponsor-grid{
-grid-template-columns:1fr 1fr;
-}
+    .sponsor-grid{
+        grid-template-columns:1fr 1fr;
+    }
 
-.footer{
-flex-direction:column;
+    .footer{
+        flex-direction:column;
 
-text-align:center;
-}
+        text-align:center;
+    }
 
 }
 
@@ -1652,38 +1651,1421 @@ text-align:center;
 
 
 <!-- =====================================================
-HEADER
+     HEADER
 ===================================================== -->
 
 <header class="header">
 
-<nav class="nav">
+    <nav class="nav">
 
-<a href="#inicio" class="brand">
+        <a href="#inicio" class="brand">
 
-<img
-src="C:\Users\Lotfi-Pc\Desktop\escudo1.jpeg"
-class="brand-logo"
-alt="Real Sports Club">
+            <img
+                src="C:\Users\Lotfi-Pc\Desktop\escudo1.jpeg"
+                class="brand-logo"
+                alt="Real Sports Club">
 
-<div class="brand-text">
-Real Sports <span>Club</span>
-</div>
+            <div class="brand-text">
+              Real Sports <span>Club</span>
+            </div>
 
-</a>
-
-
-<button
-class="menu-button"
-onclick="toggleMenu()"
-aria-label="Abrir menú">
-☰
-</button>
+        </a>
 
 
-<ul class="menu" id="menu">
+        <button
+            class="menu-button"
+            onclick="toggleMenu()"
+            aria-label="Abrir menú">
+            ☰
+        </button>
 
-<li>
-<a href="#inicio">Inicio</a>
-</li>
 
+        <ul class="menu" id="menu">
+
+            <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#club">Club</a>
+            </li>
+
+            <li>
+                <a href="#equipos">Equipos</a>
+            </li>
+
+            <li>
+                <a href="#partidos">Partidos</a>
+            </li>
+
+            <li>
+                <a href="#resultados">Resultados</a>
+            </li>
+
+            <li>
+                <a href="#noticias">Noticias</a>
+            </li>
+
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="inicio">
+
+    <img
+        src="C:\Users\Lotfi-Pc\Desktop\escudo1.jpeg"
+        class="hero-main"
+        alt="Escudo principal Sports Club">
+
+
+    <div class="hero-content reveal">
+
+        <div class="eyebrow">
+            Sports Academy
+        </div>
+
+
+        <h1>
+
+            <span class="white">
+                Nacidos
+            </span>
+
+            <br>
+
+            <span class="red">
+                para
+            </span>
+
+            <br>
+
+            <span class="gold">
+                competir.
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Bienvenidos a Real Sports Club, un club deportivo y una academia
+            deportiva donde la pasión, la formación,
+            el esfuerzo y la competición se unen
+            para construir algo más grande.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="#equipos"
+                class="btn btn-red">
+                Nuestros equipos
+            </a>
+
+            <a
+                href="#partidos"
+                class="btn btn-gold">
+                Próximos partidos
+            </a>
+
+            <a
+                href="#club"
+                class="btn btn-outline">
+                Conoce el club
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="scroll">
+        Descubre Real Sports Club
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     IDENTIDAD
+===================================================== -->
+
+<section
+    class="identity"
+    id="club">
+
+    <div class="section">
+
+        <div class="identity-grid">
+
+
+            <div class="secondary-logo reveal">
+
+                <img
+                    src="C:\Users\Lotfi-Pc\Desktop\escudo2.jpeg"
+                    alt="Escudo secundario Sports Club">
+
+            </div>
+
+
+            <div class="identity-copy reveal">
+
+                <div class="small-title">
+                    Nuestra identidad
+                </div>
+
+
+                <h2 class="section-title">
+
+                    Dos símbolos.<br>
+
+                    <span>
+                        Una pasión.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Real Sports Club nace con una identidad
+                    deportiva fuerte, moderna y ambiciosa.
+
+                    El águila representa fuerza,
+                    visión y liderazgo. Nuestro segundo
+                    emblema representa energía,
+                    carácter y creatividad.
+
+                </p>
+
+
+                <p>
+
+                    Dos símbolos que representan una misma
+                    filosofía: trabajar, competir y crecer
+                    juntos dentro y fuera de la pista.
+
+                </p>
+
+
+                <div class="identity-highlight">
+
+                    <strong>
+                        DEPORTE · FORMACIÓN · EQUIPO
+                    </strong>
+
+                    <span>
+                        Los valores que definen nuestro club.
+                    </span>
+
+                </div>
+
+
+                <div class="values">
+
+
+                    <div class="value">
+
+                        <div class="value-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Pasión
+                        </h3>
+
+                        <p>
+                            Vivimos cada entrenamiento
+                            y cada competición.
+                        </p>
+
+                    </div>
+
+
+                    <div class="value">
+
+                        <div class="value-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Equipo
+                        </h3>
+
+                        <p>
+                            Nadie llega lejos
+                            trabajando solo.
+                        </p>
+
+                    </div>
+
+
+                    <div class="value">
+
+                        <div class="value-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Futuro
+                        </h3>
+
+                        <p>
+                            Formamos hoy a quienes
+                            competirán mañana.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EQUIPOS
+===================================================== -->
+
+<section
+    class="teams"
+    id="equipos">
+
+    <div class="section">
+
+        <div class="section-top reveal">
+
+            <div>
+
+                <div class="small-title">
+                    Competición
+                </div>
+
+                <h2 class="section-title">
+
+                    Nuestros<br>
+
+                    <span>equipos</span>
+
+                </h2>
+
+            </div>
+
+
+            <p class="section-text">
+
+                Diferentes categorías, diferentes
+                objetivos y una misma camiseta.
+                Descubre todos los equipos que
+                forman Real Sports Club.
+
+            </p>
+
+        </div>
+
+
+        <div class="team-grid">
+
+
+            <article class="team reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=85"
+                    alt="Equipo senior">
+
+                <div class="team-overlay">
+
+                    <div class="team-label">
+                        Competición
+                    </div>
+
+                    <h3>
+                        Primer equipo
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+            <article class="team reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85"
+                    alt="Equipo juvenil">
+
+                <div class="team-overlay">
+
+                    <div class="team-label">
+                        Formación
+                    </div>
+
+                    <h3>
+                        Juvenil
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+            <article class="team reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=85"
+                    alt="Academia">
+
+                <div class="team-overlay">
+
+                    <div class="team-label">
+                        Academia
+                    </div>
+
+                    <h3>
+                        Cantera
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PARTIDOS
+===================================================== -->
+
+<section
+    class="matches"
+    id="partidos">
+
+    <div class="section">
+
+        <div class="section-top reveal">
+
+            <div>
+
+                <div class="small-title">
+                    Calendario
+                </div>
+
+                <h2 class="section-title">
+
+                    Próximos<br>
+
+                    <span>partidos</span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="match-list">
+
+
+            <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 18:30    03-10-26
+                </div>
+
+                <div class="match-teams">
+
+                    REAL SPORTS CLUB
+
+                    <span>
+                        VS
+                    </span>
+
+                    SPBASKET NEGRO
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Manuel Cacicedo
+                </div>
+
+            </div>
+
+
+            <div class="match reveal">
+
+                <div class="match-date">
+                    Domingo · 18:30  11-10-26 
+                </div>
+
+                <div class="match-teams">
+
+                    BALONCESTO CAYON
+
+                    <span>
+                        VS
+                    </span>
+
+                    REAL SPORTS CLUB
+
+                </div>
+
+                <div class="match-location">
+                    Pabellon Gerardo Diego
+                </div>
+
+            </div>
+
+
+            <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 18:30    17-10-26
+                </div>
+
+                <div class="match-teams">
+
+                    REAL SPORTS CLUB
+
+                    <span>
+                        VS
+                    </span>
+
+                    CBT TORRELAVEGA B
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Manuel Cacicedo
+                </div>
+
+            </div>
+
+      <div class="match reveal">
+
+                <div class="match-date">
+                    dOMINGO · 18:30 25-10-26
+                </div>
+
+                <div class="match-teams">
+
+                    VENTANAS ARSAN ASTILLERO B
+
+                    <span>
+                        VS
+                    </span>
+
+                    REAL SPORTS CLUB
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Angel Fernandez
+                </div>
+
+            </div>
+			
+        </div>
+		
+		      <div class="match reveal">
+
+                <div class="match-date">
+                    Domingo· 00:00  01-11-26
+                </div>
+
+                <div class="match-teams">
+
+                    ADB COLINDRES 2  
+
+                    <span>
+                        VS
+                    </span>
+
+                    REAL SPORTS CLUB
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Nº1
+                </div>
+
+            </div>
+			
+			      <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 18:30  14-11-26
+                </div>
+
+                <div class="match-teams">
+
+                    REAL SPORTS CLUB
+
+                    <span>
+                        VS
+                    </span>
+
+                    AMIDE
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Manuel Cacicedo
+                </div>
+
+            </div>
+			
+			      <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 18:00  21-11-26
+                </div>
+
+                <div class="match-teams">
+
+                    C B SANTILLANA
+
+                    <span>
+                        VS
+                    </span>
+
+                    REAL SPORTS CLUB
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Santillana Del Mar
+                </div>
+
+            </div>
+			
+			      <div class="match reveal">
+
+                <div class="match-date">
+                    Domingo· 18:30  29-11-26
+                </div>
+
+                <div class="match-teams">
+
+                    SPBASKET NEGRO
+
+                    <span>
+                        VS
+                    </span>
+
+                    REAL SPORTS CLUB
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Jose Escandon
+                </div>
+
+            </div>
+			
+			      <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 18:30 12-12-26
+                </div>
+
+                <div class="match-teams">
+
+                    REAL SPORTS CLUB
+
+                    <span>
+                        VS
+                    </span>
+
+                    BALONCESTO CAYON
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Manuel Cacicedo
+                </div>
+
+            </div>
+			
+			      <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 20:30  19-12-26
+                </div>
+
+                <div class="match-teams">
+
+                    CBT TORRELAVEGA B
+
+                    <span>
+                        VS
+                    </span>
+
+                    REAL SPORTS CLUB
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Habana Vieja
+                </div>
+
+            </div>
+			
+			      <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 18:30  09-01-27
+                </div>
+
+                <div class="match-teams">
+
+                    REAL SPORTS CLUB
+
+                    <span>
+                        VS
+                    </span>
+
+                    VENTANAS ARSAN ASTILLERO B
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Manuel Cacicedo
+                </div>
+
+            </div>
+			
+			      <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 18:30 16-01-27
+                </div>
+
+                <div class="match-teams">
+
+                    REAL SPORTS CLUB
+
+                    <span>
+                        VS
+                    </span>
+
+                    ADB COLINDRES 2
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Manuel Cacicedo
+                </div>
+
+            </div>
+			
+			      <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 18:30  23-01-27
+                </div>
+
+                <div class="match-teams">
+
+                    AMIDE
+
+                    <span>
+                        VS
+                    </span>
+
+                    REAL SPORTS CLUB
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Matilde De La Torre
+                </div>
+
+            </div>
+			
+			      <div class="match reveal">
+
+                <div class="match-date">
+                    Sábado · 18:30 30-01-27
+                </div>
+
+                <div class="match-teams">
+
+                    REAL SPORTS CLUB
+
+                    <span>
+                        VS
+                    </span>
+
+                    CB SANTILLANA
+
+                </div>
+
+                <div class="match-location">
+                    Pabellón Manuel Cacicedo
+                </div>
+
+            </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RESULTADOS
+===================================================== -->
+
+<section
+    class="results"
+    id="resultados">
+
+    <div class="section">
+
+        <div class="section-top reveal">
+
+            <div>
+
+                <div class="small-title">
+                    Competición
+                </div>
+
+                <h2 class="section-title">
+
+                    Resultados &<br>
+
+                    <span>clasificación</span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="results-grid">
+
+
+            <div class="result-card reveal">
+
+                <h3>
+                    Último resultado
+                </h3>
+
+
+                <div class="score">
+
+                    <div class="score-team">
+                        REAL SPORTS CLUB
+                    </div>
+
+                    <div class="score-number gold">
+                        
+                    </div>
+
+                    <div class="vs">
+                        -
+                    </div>
+
+                    <div class="score-number">
+                        
+                    </div>
+
+                    <div class="score-team">
+                        CB SANTILLANA
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="result-card reveal">
+
+                <h3>
+                    Clasificación GP.1
+                </h3>
+
+
+                <table class="table">
+
+                    <thead>
+
+                        <tr>
+                            <th>#</th>
+                            <th>Equipo</th>
+                            <th>Pts</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td class="position">1</td>
+                            <td>CB SANTILLANA</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>VANTANAS ARSAN ASTILLERO B</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>SP BASKET NEGRO</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>CBT TORRELAVEGA B</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>BALONCESTO CAYON</td>
+                            <td>0</td>
+                        </tr>
+						
+						<tr>
+                            <td>6</td>
+                            <td>REAL SPORTS CLUB</td>
+                            <td>0</td>
+                        </tr>
+						
+						<tr>
+                            <td>7</td>
+                            <td>ADB COLINDRES B</td>
+                            <td>0</td>
+                        </tr>
+						
+						<tr>
+                            <td>8</td>
+                            <td>AMIDE</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NOTICIAS
+===================================================== -->
+
+<section
+    class="news"
+    id="noticias">
+
+    <div class="section">
+
+        <div class="section-top reveal">
+
+            <div>
+
+                <div class="small-title">
+                    Actualidad
+                </div>
+
+                <h2 class="section-title">
+
+                    Últimas<br>
+
+                    <span>noticias</span>
+
+                </h2>
+
+            </div>
+
+
+            <p class="section-text">
+
+                Todo lo que ocurre alrededor
+                de Real Sports Club.
+
+            </p>
+
+        </div>
+
+
+        <div class="news-grid">
+
+
+            <article class="news-card reveal">
+
+                <div class="news-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=85"
+                        alt="Actualidad deportiva">
+
+                </div>
+
+                <div class="news-body">
+
+                    <div class="news-category">
+                        Primer equipo
+                    </div>
+
+                    <h3>
+                        Preparados para el próximo desafío
+                    </h3>
+
+                    <p>
+                        El equipo afronta una nueva jornada
+                        con la máxima ilusión y ambición.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="news-card reveal">
+
+                <div class="news-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1200&q=85"
+                        alt="Formación deportiva">
+
+                </div>
+
+                <div class="news-body">
+
+                    <div class="news-category">
+                        Academia
+                    </div>
+
+                    <h3>
+                        La cantera sigue creciendo
+                    </h3>
+
+                    <p>
+                        Nuestro proyecto de formación continúa
+                        apostando por el futuro del deporte.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="news-card reveal">
+
+                <div class="news-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=85"
+                        alt="Comunidad deportiva">
+
+                </div>
+
+                <div class="news-body">
+
+                    <div class="news-category">
+                        Club
+                    </div>
+
+                    <h3>
+                        Una familia que sigue creciendo
+                    </h3>
+
+                    <p>
+                        Jugadores, entrenadores, familias
+                        y aficionados forman nuestra comunidad.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DIGITAL / APP
+===================================================== -->
+
+<section class="digital">
+
+    <div class="digital-box reveal">
+
+
+        <img
+            src="C:\Users\Lotfi-Pc\Desktop\escudo2.jpeg"
+            class="digital-secondary"
+            alt="Real Sports Club">
+
+
+        <div class="digital-content">
+
+            <div class="small-title">
+                Real Sports Club Digital
+            </div>
+
+
+            <h2>
+
+                Todo el club.<br>
+
+                <span>
+                    Siempre contigo.
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                Noticias, partidos, resultados,
+                clasificaciones, equipos y novedades
+                en un único espacio digital para
+                jugadores, familias y aficionados.
+
+            </p>
+
+
+            <div class="hero-actions">
+
+                <a
+                    href="#contacto"
+                    class="btn btn-gold">
+
+                    Información
+
+                </a>
+
+                <a
+                    href="#noticias"
+                    class="btn btn-outline">
+
+                    Ver noticias
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PATROCINADORES
+===================================================== -->
+
+<section class="sponsors">
+
+    <div class="section">
+
+        <div class="small-title">
+            Colaboradores
+        </div>
+
+        <h2 class="section-title reveal">
+
+            Nuestros
+
+            <span>
+                patrocinadores
+            </span>
+
+        </h2>
+
+
+        <div class="sponsor-grid">
+
+
+            <div class="sponsor reveal">
+                DBL HABITAT
+            </div>
+
+            <div class="sponsor reveal">
+                DSTF
+            </div>
+
+            <div class="sponsor reveal">
+                PATROCINADOR
+            </div>
+
+            <div class="sponsor reveal">
+                PATROCINADOR
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACTO
+===================================================== -->
+
+<section
+    class="contact"
+    id="contacto">
+
+    <div class="section">
+
+        <div class="contact-content reveal">
+
+            <div class="small-title">
+                Únete al equipo
+            </div>
+
+
+            <h2>
+
+                Vive la<br>
+
+                <span>
+                    pasión.
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                ¿Quieres formar parte de Real Sports Club,
+                conocer nuestros equipos, colaborar
+                con el club o recibir información?
+
+                Ponte en contacto con nosotros.
+
+            </p>
+
+
+            <div class="contact-buttons">
+
+                <a
+                    href="mailto:realsportsaacademyclub@gmail.com"
+                    class="btn btn-red">
+
+                    Contactar
+
+                </a>
+
+                <a
+                    href="#inicio"
+                    class="btn btn-outline">
+
+                    Volver arriba
+
+                </a>
+				
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer">
+
+        <div class="footer-brand">
+
+            REAL SPORTS
+
+            <span>
+                CLUB
+            </span>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            © 2026 Real Sports Club · Real Sports Academy
+			         <div class="footer-copy">
+	            		LOTFI DKHILALLI BOUAZZI
+						</div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* ========================================================
+   MENÚ MÓVIL
+======================================================== */
+
+function toggleMenu(){
+
+    const menu =
+        document.getElementById("menu");
+
+    menu.classList.toggle("open");
+
+}
+
+
+/* ========================================================
+   CERRAR MENÚ AL NAVEGAR
+======================================================== */
+
+document
+    .querySelectorAll(".menu a")
+    .forEach(function(link){
+
+        link.addEventListener(
+            "click",
+            function(){
+
+                document
+                    .getElementById("menu")
+                    .classList.remove("open");
+
+            }
+        );
+
+    });
+
+
+/* ========================================================
+   ANIMACIONES
+======================================================== */
+
+const observer =
+    new IntersectionObserver(
+        function(entries){
+
+            entries.forEach(
+                function(entry){
+
+                    if(
+                        entry.isIntersecting
+                    ){
+
+                        entry.target
+                            .classList
+                            .add("visible");
+
+                    }
+
+                }
+            );
+
+        },
+        {
+            threshold:.12
+        }
+    );
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach(function(element){
+
+        observer.observe(element);
+
+    });
+
+
+/* ========================================================
+   HEADER AL HACER SCROLL
+======================================================== */
+
+window.addEventListener(
+    "scroll",
+    function(){
+
+        const header =
+            document.querySelector(".header");
+
+        if(window.scrollY > 40){
+
+            header.style.background =
+                "rgba(3,3,3,.98)";
+
+        }else{
+
+            header.style.background =
+                "rgba(0,0,0,.88)";
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+</html>
